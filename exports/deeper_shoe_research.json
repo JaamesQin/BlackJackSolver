@@ -1,0 +1,4836 @@
+{
+  "configuration": {
+    "shoes_per_scenario": 5000000,
+    "seed": 20260909,
+    "thresholds": [
+      104,
+      156
+    ],
+    "methods": [
+      "baseline",
+      "hilo",
+      "halves",
+      "hiopt2-ace",
+      "omega2-ace",
+      "ko-centered",
+      "composition"
+    ],
+    "minimum": 1.0,
+    "maximum": 4.0,
+    "full_bet_edge": 0.01,
+    "practical_improvement_threshold": 0.001,
+    "parameter_tuning": "none; analytic derivatives and fixed defaults",
+    "finite_difference_epsilon": 1e-05,
+    "model_sha256": "69e05f2fdc11e7a334d3ecb37c64745e340063335797a5f6218767abb752a1b7",
+    "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "compile_flags": [
+      "-std=c++17",
+      "-O3",
+      "-Wall",
+      "-Wextra"
+    ],
+    "rng": "std::mt19937_64; unbiased rejection; descending Fisher-Yates",
+    "python": "3.12.3",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39"
+  },
+  "uncertainty": {
+    "cluster": "independent complete shoes",
+    "family_size": 272,
+    "family_z": 3.7402688485826796,
+    "correction": "Bonferroni across every reported absolute and paired estimate, both metrics"
+  },
+  "results": [
+    {
+      "shoes": 5000000,
+      "rounds": 97129892,
+      "expected_profit_per_round": -0.004782158102265778,
+      "profit_per_round_se": 0.00011593367912255888,
+      "profit_per_round_ci95": [
+        -0.005009388113345993,
+        -0.004554928091185563
+      ],
+      "profit_relative_to_initial_wagers": -0.004782158102265778,
+      "profit_relative_to_initial_wagers_se": 0.00011593367912255888,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.005009388113345993,
+        -0.004554928091185563
+      ],
+      "round_profit_variance": 1.3091597536522743,
+      "long_run_variance_per_round": 1.3054857703719638,
+      "total_profit": -464490.5,
+      "total_initial_wagers": 97129892,
+      "mean_initial_bet": 1.0,
+      "observed_bet_range": [
+        1,
+        1
+      ],
+      "fraction_raised_bets": 0.0,
+      "mean_predicted_unit_edge": -0.006254137945518379,
+      "mean_realized_unit_profit": -0.004782158102265778,
+      "prediction_bias_realized_minus_predicted": 0.0014719798432536984,
+      "prediction_bias_ci95": [
+        0.0012444918691259378,
+        0.001699467817381459
+      ],
+      "mean_cards_per_round": 5.474486731643848,
+      "mean_cards_per_shoe": 106.347261,
+      "max_cards_per_shoe": 117,
+      "hidden_cards_mucked": 19758996,
+      "reshuffle_policy": "104",
+      "method": "baseline",
+      "betting": "constant",
+      "shared_play_runtime_seconds": 7.122725535000004,
+      "expected_profit_per_round_family_ci95": [
+        -0.005215781230789466,
+        -0.004348534973742091
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.005215781230789466,
+        -0.004348534973742091
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 97129892,
+      "expected_profit_per_round": -0.0037734866787948597,
+      "profit_per_round_se": 0.00013957922400478193,
+      "profit_per_round_ci95": [
+        -0.004047061957844232,
+        -0.0034999113997454872
+      ],
+      "profit_relative_to_initial_wagers": -0.0033532458033135922,
+      "profit_relative_to_initial_wagers_se": 0.00012401984899488222,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.0035963247073435615,
+        -0.003110166899283623
+      ],
+      "round_profit_variance": 1.89877572353461,
+      "long_run_variance_per_round": 1.8923195007321125,
+      "total_profit": -366518.3535747834,
+      "total_initial_wagers": 109302560.88372624,
+      "mean_initial_bet": 1.1253236118467653,
+      "observed_bet_range": [
+        1,
+        4
+      ],
+      "fraction_raised_bets": 0.12868285697259912,
+      "mean_predicted_unit_edge": -0.006254137945518379,
+      "mean_realized_unit_profit": -0.004782158102265778,
+      "prediction_bias_realized_minus_predicted": 0.0014719798432536984,
+      "prediction_bias_ci95": [
+        0.0012444918691259378,
+        0.001699467817381459
+      ],
+      "mean_cards_per_round": 5.474486731643848,
+      "mean_cards_per_shoe": 106.347261,
+      "max_cards_per_shoe": 117,
+      "hidden_cards_mucked": 19758996,
+      "reshuffle_policy": "104",
+      "method": "baseline",
+      "betting": "ramp",
+      "shared_play_runtime_seconds": 7.122725535000004,
+      "expected_profit_per_round_family_ci95": [
+        -0.0042955505022492894,
+        -0.00325142285534043
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.0038171133811150783,
+        -0.002889378225512106
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 97129892,
+      "expected_profit_per_round": -0.0028639226737737955,
+      "profit_per_round_se": 0.00019749067629488154,
+      "profit_per_round_ci95": [
+        -0.0032510043993117634,
+        -0.0024768409482358276
+      ],
+      "profit_relative_to_initial_wagers": -0.002066249865888464,
+      "profit_relative_to_initial_wagers_se": 0.00014247013332326116,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.0023454913272020557,
+        -0.001787008404574872
+      ],
+      "round_profit_variance": 3.794469395533458,
+      "long_run_variance_per_round": 3.7883151421325216,
+      "total_profit": -278172.5,
+      "total_initial_wagers": 134626748,
+      "mean_initial_bet": 1.3860485709177974,
+      "observed_bet_range": [
+        1,
+        4
+      ],
+      "fraction_raised_bets": 0.12868285697259912,
+      "mean_predicted_unit_edge": -0.006254137945518379,
+      "mean_realized_unit_profit": -0.004782158102265778,
+      "prediction_bias_realized_minus_predicted": 0.0014719798432536984,
+      "prediction_bias_ci95": [
+        0.0012444918691259378,
+        0.001699467817381459
+      ],
+      "mean_cards_per_round": 5.474486731643848,
+      "mean_cards_per_shoe": 106.347261,
+      "max_cards_per_shoe": 117,
+      "hidden_cards_mucked": 19758996,
+      "reshuffle_policy": "104",
+      "method": "baseline",
+      "betting": "positive-step",
+      "shared_play_runtime_seconds": 7.122725535000004,
+      "expected_profit_per_round_family_ci95": [
+        -0.003602590898205067,
+        -0.002125254449342524
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.0025991264674108784,
+        -0.001533373264366049
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 97262062,
+      "expected_profit_per_round": -0.004602298067667946,
+      "profit_per_round_se": 0.00011614520467395737,
+      "profit_per_round_ci95": [
+        -0.004829942668828902,
+        -0.00437465346650699
+      ],
+      "profit_relative_to_initial_wagers": -0.004602298067667946,
+      "profit_relative_to_initial_wagers_se": 0.00011614520467395737,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.004829942668828902,
+        -0.00437465346650699
+      ],
+      "round_profit_variance": 1.316081967066648,
+      "long_run_variance_per_round": 1.3120368711762234,
+      "total_profit": -447629,
+      "total_initial_wagers": 97262062,
+      "mean_initial_bet": 1.0,
+      "observed_bet_range": [
+        1,
+        1
+      ],
+      "fraction_raised_bets": 0.0,
+      "mean_predicted_unit_edge": -0.00600835673012035,
+      "mean_realized_unit_profit": -0.004602298067667946,
+      "prediction_bias_realized_minus_predicted": 0.0014060586624526515,
+      "prediction_bias_ci95": [
+        0.001178148349683421,
+        0.001633968975221882
+      ],
+      "mean_cards_per_round": 5.466905390099585,
+      "mean_cards_per_shoe": 106.3444982,
+      "max_cards_per_shoe": 119,
+      "hidden_cards_mucked": 19081549,
+      "reshuffle_policy": "104",
+      "method": "hilo",
+      "betting": "constant",
+      "shared_play_runtime_seconds": 8.62859155299764,
+      "expected_profit_per_round_family_ci95": [
+        -0.005036712358622209,
+        -0.004167883776713684
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.005036712358622209,
+        -0.004167883776713684
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 97262062,
+      "expected_profit_per_round": -0.00329999964247196,
+      "profit_per_round_se": 0.00014571800770051384,
+      "profit_per_round_ci95": [
+        -0.003585606937564967,
+        -0.0030143923473789527
+      ],
+      "profit_relative_to_initial_wagers": -0.0028718064149329237,
+      "profit_relative_to_initial_wagers_se": 0.0001267947513658255,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.0031203241276099416,
+        -0.002623288702255906
+      ],
+      "round_profit_variance": 2.072159596466417,
+      "long_run_variance_per_round": 2.065237119303092,
+      "total_profit": -320964.7698260856,
+      "total_initial_wagers": 111764068.83037843,
+      "mean_initial_bet": 1.1491023995602563,
+      "observed_bet_range": [
+        1,
+        4
+      ],
+      "fraction_raised_bets": 0.1296974250864638,
+      "mean_predicted_unit_edge": -0.00600835673012035,
+      "mean_realized_unit_profit": -0.004602298067667946,
+      "prediction_bias_realized_minus_predicted": 0.0014060586624526515,
+      "prediction_bias_ci95": [
+        0.001178148349683421,
+        0.001633968975221882
+      ],
+      "mean_cards_per_round": 5.466905390099585,
+      "mean_cards_per_shoe": 106.3444982,
+      "max_cards_per_shoe": 119,
+      "hidden_cards_mucked": 19081549,
+      "reshuffle_policy": "104",
+      "method": "hilo",
+      "betting": "ramp",
+      "shared_play_runtime_seconds": 8.62859155299764,
+      "expected_profit_per_round_family_ci95": [
+        -0.0038450241673517226,
+        -0.002754975117592197
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.003346052873630307,
+        -0.0023975599562355405
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 97262062,
+      "expected_profit_per_round": -0.002409901611997492,
+      "profit_per_round_se": 0.00020006388638318018,
+      "profit_per_round_ci95": [
+        -0.002802026829308525,
+        -0.002017776394686459
+      ],
+      "profit_relative_to_initial_wagers": -0.0017348751086730218,
+      "profit_relative_to_initial_wagers_se": 0.00014401166816516687,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.002017137978276749,
+        -0.0014526122390692948
+      ],
+      "round_profit_variance": 3.9009530883515646,
+      "long_run_variance_per_round": 3.892968365516914,
+      "total_profit": -234392,
+      "total_initial_wagers": 135105979,
+      "mean_initial_bet": 1.3890922752593915,
+      "observed_bet_range": [
+        1,
+        4
+      ],
+      "fraction_raised_bets": 0.1296974250864638,
+      "mean_predicted_unit_edge": -0.00600835673012035,
+      "mean_realized_unit_profit": -0.004602298067667946,
+      "prediction_bias_realized_minus_predicted": 0.0014060586624526515,
+      "prediction_bias_ci95": [
+        0.001178148349683421,
+        0.001633968975221882
+      ],
+      "mean_cards_per_round": 5.466905390099585,
+      "mean_cards_per_shoe": 106.3444982,
+      "max_cards_per_shoe": 119,
+      "hidden_cards_mucked": 19081549,
+      "reshuffle_policy": "104",
+      "method": "hilo",
+      "betting": "positive-step",
+      "shared_play_runtime_seconds": 8.62859155299764,
+      "expected_profit_per_round_family_ci95": [
+        -0.0031581943339628856,
+        -0.0016616088900320986
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.0022735174649436214,
+        -0.0011962327524024222
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 97268164,
+      "expected_profit_per_round": -0.004577093693266381,
+      "profit_per_round_se": 0.00011612199245317297,
+      "profit_per_round_ci95": [
+        -0.0048046927984746,
+        -0.004349494588058162
+      ],
+      "profit_relative_to_initial_wagers": -0.004577093693266381,
+      "profit_relative_to_initial_wagers_se": 0.00011612199245317297,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.0048046927984746,
+        -0.004349494588058162
+      ],
+      "round_profit_variance": 1.3160795036977746,
+      "long_run_variance_per_round": 1.311594770154788,
+      "total_profit": -445205.5,
+      "total_initial_wagers": 97268164,
+      "mean_initial_bet": 1.0,
+      "observed_bet_range": [
+        1,
+        1
+      ],
+      "fraction_raised_bets": 0.0,
+      "mean_predicted_unit_edge": -0.006037445128183555,
+      "mean_realized_unit_profit": -0.004577093693266381,
+      "prediction_bias_realized_minus_predicted": 0.0014603514349178942,
+      "prediction_bias_ci95": [
+        0.0012324737063353324,
+        0.0016882291635004559
+      ],
+      "mean_cards_per_round": 5.466555233837867,
+      "mean_cards_per_shoe": 106.3443582,
+      "max_cards_per_shoe": 117,
+      "hidden_cards_mucked": 19054192,
+      "reshuffle_policy": "104",
+      "method": "halves",
+      "betting": "constant",
+      "shared_play_runtime_seconds": 9.390319562998341,
+      "expected_profit_per_round_family_ci95": [
+        -0.005011421164274337,
+        -0.004142766222258425
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.005011421164274337,
+        -0.004142766222258425
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 97268164,
+      "expected_profit_per_round": -0.0032369407373500723,
+      "profit_per_round_se": 0.00014655604852197208,
+      "profit_per_round_ci95": [
+        -0.0035241905924531377,
+        -0.002949690882247007
+      ],
+      "profit_relative_to_initial_wagers": -0.002810281929746268,
+      "profit_relative_to_initial_wagers_se": 0.00012722246396070245,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.0030596379591092447,
+        -0.002560925900383291
+      ],
+      "round_profit_variance": 2.096922181432535,
+      "long_run_variance_per_round": 2.0891913172611423,
+      "total_profit": -314851.28249884775,
+      "total_initial_wagers": 112035479.1333248,
+      "mean_initial_bet": 1.1518206422948911,
+      "observed_bet_range": [
+        1,
+        4
+      ],
+      "fraction_raised_bets": 0.13570184176602737,
+      "mean_predicted_unit_edge": -0.006037445128183555,
+      "mean_realized_unit_profit": -0.004577093693266381,
+      "prediction_bias_realized_minus_predicted": 0.0014603514349178942,
+      "prediction_bias_ci95": [
+        0.0012324737063353324,
+        0.0016882291635004559
+      ],
+      "mean_cards_per_round": 5.466555233837867,
+      "mean_cards_per_shoe": 106.3443582,
+      "max_cards_per_shoe": 117,
+      "hidden_cards_mucked": 19054192,
+      "reshuffle_policy": "104",
+      "method": "halves",
+      "betting": "ramp",
+      "shared_play_runtime_seconds": 9.390319562998341,
+      "expected_profit_per_round_family_ci95": [
+        -0.003785099760208176,
+        -0.0026887817144919685
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.0032861281485384156,
+        -0.00233443571095412
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 97268164,
+      "expected_profit_per_round": -0.0022049763373759167,
+      "profit_per_round_se": 0.00020326413772521045,
+      "profit_per_round_ci95": [
+        -0.002603374047317329,
+        -0.0018065786274345042
+      ],
+      "profit_relative_to_initial_wagers": -0.0015670298337495429,
+      "profit_relative_to_initial_wagers_se": 0.00014444292829260367,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.001850137973203046,
+        -0.0012839216942960396
+      ],
+      "round_profit_variance": 4.025666230215932,
+      "long_run_variance_per_round": 4.018761586332226,
+      "total_profit": -214474,
+      "total_initial_wagers": 136866571,
+      "mean_initial_bet": 1.4071055252980822,
+      "observed_bet_range": [
+        1,
+        4
+      ],
+      "fraction_raised_bets": 0.13570184176602737,
+      "mean_predicted_unit_edge": -0.006037445128183555,
+      "mean_realized_unit_profit": -0.004577093693266381,
+      "prediction_bias_realized_minus_predicted": 0.0014603514349178942,
+      "prediction_bias_ci95": [
+        0.0012324737063353324,
+        0.0016882291635004559
+      ],
+      "mean_cards_per_round": 5.466555233837867,
+      "mean_cards_per_shoe": 106.3443582,
+      "max_cards_per_shoe": 117,
+      "hidden_cards_mucked": 19054192,
+      "reshuffle_policy": "104",
+      "method": "halves",
+      "betting": "positive-step",
+      "shared_play_runtime_seconds": 9.390319562998341,
+      "expected_profit_per_round_family_ci95": [
+        -0.002965238859743541,
+        -0.0014447138150082924
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.00210728521884043,
+        -0.0010267744486586556
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 97258366,
+      "expected_profit_per_round": -0.004486482941734801,
+      "profit_per_round_se": 0.00011624706897979033,
+      "profit_per_round_ci95": [
+        -0.00471432719693519,
+        -0.004258638686534412
+      ],
+      "profit_relative_to_initial_wagers": -0.004486482941734801,
+      "profit_relative_to_initial_wagers_se": 0.00011624706897979033,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.00471432719693519,
+        -0.004258638686534412
+      ],
+      "round_profit_variance": 1.3181444959926771,
+      "long_run_variance_per_round": 1.3142893597074687,
+      "total_profit": -436348,
+      "total_initial_wagers": 97258366,
+      "mean_initial_bet": 1.0,
+      "observed_bet_range": [
+        1,
+        1
+      ],
+      "fraction_raised_bets": 0.0,
+      "mean_predicted_unit_edge": -0.006047644144648179,
+      "mean_realized_unit_profit": -0.004486482941734801,
+      "prediction_bias_realized_minus_predicted": 0.0015611612029138614,
+      "prediction_bias_ci95": [
+        0.0013330470316081926,
+        0.0017892753742195303
+      ],
+      "mean_cards_per_round": 5.46710921505714,
+      "mean_cards_per_shoe": 106.3444218,
+      "max_cards_per_shoe": 119,
+      "hidden_cards_mucked": 19092345,
+      "reshuffle_policy": "104",
+      "method": "hiopt2-ace",
+      "betting": "constant",
+      "shared_play_runtime_seconds": 9.873587431999107,
+      "expected_profit_per_round_family_ci95": [
+        -0.004921278232578953,
+        -0.0040516876508906495
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.004921278232578953,
+        -0.0040516876508906495
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 97258366,
+      "expected_profit_per_round": -0.0031788269420344397,
+      "profit_per_round_se": 0.00014548363276789585,
+      "profit_per_round_ci95": [
+        -0.0034639748622595154,
+        -0.002893679021809364
+      ],
+      "profit_relative_to_initial_wagers": -0.0027736262370189105,
+      "profit_relative_to_initial_wagers_se": 0.000126923848199667,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.0030223969794902577,
+        -0.0025248554945475634
+      ],
+      "round_profit_variance": 2.066265982263228,
+      "long_run_variance_per_round": 2.058520720442818,
+      "total_profit": -309167.5141790463,
+      "total_initial_wagers": 111466898.47848393,
+      "mean_initial_bet": 1.1460905941858404,
+      "observed_bet_range": [
+        1,
+        4
+      ],
+      "fraction_raised_bets": 0.13274136232146858,
+      "mean_predicted_unit_edge": -0.006047644144648179,
+      "mean_realized_unit_profit": -0.004486482941734801,
+      "prediction_bias_realized_minus_predicted": 0.0015611612029138614,
+      "prediction_bias_ci95": [
+        0.0013330470316081926,
+        0.0017892753742195303
+      ],
+      "mean_cards_per_round": 5.46710921505714,
+      "mean_cards_per_shoe": 106.3444218,
+      "max_cards_per_shoe": 119,
+      "hidden_cards_mucked": 19092345,
+      "reshuffle_policy": "104",
+      "method": "hiopt2-ace",
+      "betting": "ramp",
+      "shared_play_runtime_seconds": 9.873587431999107,
+      "expected_profit_per_round_family_ci95": [
+        -0.0037229748416548426,
+        -0.0026346790424140367
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.003248355552582362,
+        -0.002298896921455459
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 97258366,
+      "expected_profit_per_round": -0.0020878306756665025,
+      "profit_per_round_se": 0.00020184356014603104,
+      "profit_per_round_ci95": [
+        -0.0024834440535527235,
+        -0.0016922172977802818
+      ],
+      "profit_relative_to_initial_wagers": -0.0014932017658194241,
+      "profit_relative_to_initial_wagers_se": 0.00014434541074378557,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.001776118770877244,
+        -0.0012102847607616044
+      ],
+      "round_profit_variance": 3.971118855186101,
+      "long_run_variance_per_round": 3.9623858523415914,
+      "total_profit": -203059,
+      "total_initial_wagers": 135988990,
+      "mean_initial_bet": 1.3982240869644058,
+      "observed_bet_range": [
+        1,
+        4
+      ],
+      "fraction_raised_bets": 0.13274136232146858,
+      "mean_predicted_unit_edge": -0.006047644144648179,
+      "mean_realized_unit_profit": -0.004486482941734801,
+      "prediction_bias_realized_minus_predicted": 0.0015611612029138614,
+      "prediction_bias_ci95": [
+        0.0013330470316081926,
+        0.0017892753742195303
+      ],
+      "mean_cards_per_round": 5.46710921505714,
+      "mean_cards_per_shoe": 106.3444218,
+      "max_cards_per_shoe": 119,
+      "hidden_cards_mucked": 19092345,
+      "reshuffle_policy": "104",
+      "method": "hiopt2-ace",
+      "betting": "positive-step",
+      "shared_play_runtime_seconds": 9.873587431999107,
+      "expected_profit_per_round_family_ci95": [
+        -0.002842779855967727,
+        -0.001332881495365278
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.002033092409060277,
+        -0.0009533111225785713
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 97259777,
+      "expected_profit_per_round": -0.004506631760013186,
+      "profit_per_round_se": 0.00011626569190516486,
+      "profit_per_round_ci95": [
+        -0.004734512516147309,
+        -0.004278751003879063
+      ],
+      "profit_relative_to_initial_wagers": -0.004506631760013186,
+      "profit_relative_to_initial_wagers_se": 0.00011626569190516486,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.004734512516147309,
+        -0.004278751003879063
+      ],
+      "round_profit_variance": 1.3182551012861847,
+      "long_run_variance_per_round": 1.3147295685162217,
+      "total_profit": -438314,
+      "total_initial_wagers": 97259777,
+      "mean_initial_bet": 1.0,
+      "observed_bet_range": [
+        1,
+        1
+      ],
+      "fraction_raised_bets": 0.0,
+      "mean_predicted_unit_edge": -0.006042671758726228,
+      "mean_realized_unit_profit": -0.004506631760013186,
+      "prediction_bias_realized_minus_predicted": 0.001536039998713003,
+      "prediction_bias_ci95": [
+        0.0013078845820991031,
+        0.001764195415326903
+      ],
+      "mean_cards_per_round": 5.467031021467384,
+      "mean_cards_per_shoe": 106.3444436,
+      "max_cards_per_shoe": 117,
+      "hidden_cards_mucked": 19082950,
+      "reshuffle_policy": "104",
+      "method": "omega2-ace",
+      "betting": "constant",
+      "shared_play_runtime_seconds": 6.912217580999764,
+      "expected_profit_per_round_family_ci95": [
+        -0.004941496705604985,
+        -0.004071766814421386
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.004941496705604985,
+        -0.004071766814421386
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 97259777,
+      "expected_profit_per_round": -0.0032021784731943747,
+      "profit_per_round_se": 0.0001463038351877953,
+      "profit_per_round_ci95": [
+        -0.0034889339901624534,
+        -0.002915422956226296
+      ],
+      "profit_relative_to_initial_wagers": -0.0027846347809228626,
+      "profit_relative_to_initial_wagers_se": 0.0001272110418523345,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.003033968422953438,
+        -0.002535301138892287
+      ],
+      "round_profit_variance": 2.089036795929558,
+      "long_run_variance_per_round": 2.081827260390237,
+      "total_profit": -311443.16421708534,
+      "total_initial_wagers": 111843451.19537336,
+      "mean_initial_bet": 1.1499455853715699,
+      "observed_bet_range": [
+        1,
+        4
+      ],
+      "fraction_raised_bets": 0.1348981604183608,
+      "mean_predicted_unit_edge": -0.006042671758726228,
+      "mean_realized_unit_profit": -0.004506631760013186,
+      "prediction_bias_realized_minus_predicted": 0.001536039998713003,
+      "prediction_bias_ci95": [
+        0.0013078845820991031,
+        0.001764195415326903
+      ],
+      "mean_cards_per_round": 5.467031021467384,
+      "mean_cards_per_shoe": 106.3444436,
+      "max_cards_per_shoe": 117,
+      "hidden_cards_mucked": 19082950,
+      "reshuffle_policy": "104",
+      "method": "omega2-ace",
+      "betting": "ramp",
+      "shared_play_runtime_seconds": 6.912217580999764,
+      "expected_profit_per_round_family_ci95": [
+        -0.00374939415037546,
+        -0.0026549627960132894
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.003260438277958897,
+        -0.0023088312838868284
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 97259777,
+      "expected_profit_per_round": -0.002320892633755473,
+      "profit_per_round_se": 0.00020301023853514348,
+      "profit_per_round_ci95": [
+        -0.0027187927012843546,
+        -0.001922992566226592
+      ],
+      "profit_relative_to_initial_wagers": -0.001652240159498438,
+      "profit_relative_to_initial_wagers_se": 0.00014450947102956038,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.0019354787227163764,
+        -0.0013690015962804997
+      ],
+      "round_profit_variance": 4.014139060344198,
+      "long_run_variance_per_round": 4.008382454432322,
+      "total_profit": -225729.5,
+      "total_initial_wagers": 136620272,
+      "mean_initial_bet": 1.4046944812550826,
+      "observed_bet_range": [
+        1,
+        4
+      ],
+      "fraction_raised_bets": 0.1348981604183608,
+      "mean_predicted_unit_edge": -0.006042671758726228,
+      "mean_realized_unit_profit": -0.004506631760013186,
+      "prediction_bias_realized_minus_predicted": 0.001536039998713003,
+      "prediction_bias_ci95": [
+        0.0013078845820991031,
+        0.001764195415326903
+      ],
+      "mean_cards_per_round": 5.467031021467384,
+      "mean_cards_per_shoe": 106.3444436,
+      "max_cards_per_shoe": 117,
+      "hidden_cards_mucked": 19082950,
+      "reshuffle_policy": "104",
+      "method": "omega2-ace",
+      "betting": "positive-step",
+      "shared_play_runtime_seconds": 6.912217580999764,
+      "expected_profit_per_round_family_ci95": [
+        -0.0030802055048918097,
+        -0.001561579762619137
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.0021927444323154638,
+        -0.0011117358866814123
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 97263534,
+      "expected_profit_per_round": -0.004601668082510759,
+      "profit_per_round_se": 0.000116150619169339,
+      "profit_per_round_ci95": [
+        -0.0048293232960826635,
+        -0.004374012868938855
+      ],
+      "profit_relative_to_initial_wagers": -0.004601668082510759,
+      "profit_relative_to_initial_wagers_se": 0.000116150619169339,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.0048293232960826635,
+        -0.004374012868938855
+      ],
+      "round_profit_variance": 1.3163197387081247,
+      "long_run_variance_per_round": 1.3121790626635312,
+      "total_profit": -447574.5,
+      "total_initial_wagers": 97263534,
+      "mean_initial_bet": 1.0,
+      "observed_bet_range": [
+        1,
+        1
+      ],
+      "fraction_raised_bets": 0.0,
+      "mean_predicted_unit_edge": -0.006048331541046831,
+      "mean_realized_unit_profit": -0.004601668082510759,
+      "prediction_bias_realized_minus_predicted": 0.0014466634585365693,
+      "prediction_bias_ci95": [
+        0.0012187426487213387,
+        0.0016745842683518
+      ],
+      "mean_cards_per_round": 5.466830713759588,
+      "mean_cards_per_shoe": 106.344655,
+      "max_cards_per_shoe": 119,
+      "hidden_cards_mucked": 19082431,
+      "reshuffle_policy": "104",
+      "method": "ko-centered",
+      "betting": "constant",
+      "shared_play_runtime_seconds": 6.240202533001492,
+      "expected_profit_per_round_family_ci95": [
+        -0.005036102625133428,
+        -0.00416723353988809
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.005036102625133428,
+        -0.00416723353988809
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 97263534,
+      "expected_profit_per_round": -0.0033725735085048405,
+      "profit_per_round_se": 0.000144679863228231,
+      "profit_per_round_ci95": [
+        -0.003656146040432173,
+        -0.003089000976577508
+      ],
+      "profit_relative_to_initial_wagers": -0.0029508908063895826,
+      "profit_relative_to_initial_wagers_se": 0.00012657416330192844,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.003198976166461362,
+        -0.002702805446317803
+      ],
+      "round_profit_variance": 2.0437411591474954,
+      "long_run_variance_per_round": 2.035945856853735,
+      "total_profit": -328028.4181119598,
+      "total_initial_wagers": 111162506.38677575,
+      "mean_initial_bet": 1.1429001375456473,
+      "observed_bet_range": [
+        1,
+        4
+      ],
+      "fraction_raised_bets": 0.13125297297957528,
+      "mean_predicted_unit_edge": -0.006048331541046831,
+      "mean_realized_unit_profit": -0.004601668082510759,
+      "prediction_bias_realized_minus_predicted": 0.0014466634585365693,
+      "prediction_bias_ci95": [
+        0.0012187426487213387,
+        0.0016745842683518
+      ],
+      "mean_cards_per_round": 5.466830713759588,
+      "mean_cards_per_shoe": 106.344655,
+      "max_cards_per_shoe": 119,
+      "hidden_cards_mucked": 19082431,
+      "reshuffle_policy": "104",
+      "method": "ko-centered",
+      "betting": "ramp",
+      "shared_play_runtime_seconds": 6.240202533001492,
+      "expected_profit_per_round_family_ci95": [
+        -0.003913715093954596,
+        -0.002831431923055085
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.0034243122064232024,
+        -0.0024774694063559627
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 97263534,
+      "expected_profit_per_round": -0.002404338916988149,
+      "profit_per_round_se": 0.00020085792789254907,
+      "profit_per_round_ci95": [
+        -0.002798020455657545,
+        -0.0020106573783187525
+      ],
+      "profit_relative_to_initial_wagers": -0.0017250751792992484,
+      "profit_relative_to_initial_wagers_se": 0.0001440987286761398,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.0020075086875044825,
+        -0.0014426416710940143
+      ],
+      "round_profit_variance": 3.933791383567502,
+      "long_run_variance_per_round": 3.923990989376309,
+      "total_profit": -233854.5,
+      "total_initial_wagers": 135561918,
+      "mean_initial_bet": 1.3937589189387258,
+      "observed_bet_range": [
+        1,
+        4
+      ],
+      "fraction_raised_bets": 0.13125297297957528,
+      "mean_predicted_unit_edge": -0.006048331541046831,
+      "mean_realized_unit_profit": -0.004601668082510759,
+      "prediction_bias_realized_minus_predicted": 0.0014466634585365693,
+      "prediction_bias_ci95": [
+        0.0012187426487213387,
+        0.0016745842683518
+      ],
+      "mean_cards_per_round": 5.466830713759588,
+      "mean_cards_per_shoe": 106.344655,
+      "max_cards_per_shoe": 119,
+      "hidden_cards_mucked": 19082431,
+      "reshuffle_policy": "104",
+      "method": "ko-centered",
+      "betting": "positive-step",
+      "shared_play_runtime_seconds": 6.240202533001492,
+      "expected_profit_per_round_family_ci95": [
+        -0.003155601567675516,
+        -0.0016530762663007814
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.002264043165286982,
+        -0.0011861071933115148
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 97242572,
+      "expected_profit_per_round": -0.004382283306945028,
+      "profit_per_round_se": 0.00011629234607640494,
+      "profit_per_round_ci95": [
+        -0.004610216305254782,
+        -0.004154350308635275
+      ],
+      "profit_relative_to_initial_wagers": -0.004382283306945028,
+      "profit_relative_to_initial_wagers_se": 0.00011629234607640494,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.004610216305254782,
+        -0.004154350308635275
+      ],
+      "round_profit_variance": 1.3188127342422753,
+      "long_run_variance_per_round": 1.3150997681648915,
+      "total_profit": -426144.5,
+      "total_initial_wagers": 97242572,
+      "mean_initial_bet": 1.0,
+      "observed_bet_range": [
+        1,
+        1
+      ],
+      "fraction_raised_bets": 0.0,
+      "mean_predicted_unit_edge": -0.006057055334778723,
+      "mean_realized_unit_profit": -0.004382283306945028,
+      "prediction_bias_realized_minus_predicted": 0.001674772027833663,
+      "prediction_bias_ci95": [
+        0.0014465581091098335,
+        0.0019029859465574926
+      ],
+      "mean_cards_per_round": 5.468034278237725,
+      "mean_cards_per_shoe": 106.3451434,
+      "max_cards_per_shoe": 117,
+      "hidden_cards_mucked": 19083461,
+      "reshuffle_policy": "104",
+      "method": "composition",
+      "betting": "constant",
+      "shared_play_runtime_seconds": 15.776931240998882,
+      "expected_profit_per_round_family_ci95": [
+        -0.004817247946303202,
+        -0.003947318667586855
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.004817247946303202,
+        -0.003947318667586855
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 97242572,
+      "expected_profit_per_round": -0.002987304061098636,
+      "profit_per_round_se": 0.0001470177550393279,
+      "profit_per_round_ci95": [
+        -0.0032754588609757184,
+        -0.002699149261221553
+      ],
+      "profit_relative_to_initial_wagers": -0.002590472352733126,
+      "profit_relative_to_initial_wagers_se": 0.00012747331498330828,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.0028403200501004103,
+        -0.002340624655365842
+      ],
+      "round_profit_variance": 2.109204447624512,
+      "long_run_variance_per_round": 2.1018223734358075,
+      "total_profit": -290493.1302472765,
+      "total_initial_wagers": 112139058.32300673,
+      "mean_initial_bet": 1.1531889378965288,
+      "observed_bet_range": [
+        1,
+        4
+      ],
+      "fraction_raised_bets": 0.13624545019232934,
+      "mean_predicted_unit_edge": -0.006057055334778723,
+      "mean_realized_unit_profit": -0.004382283306945028,
+      "prediction_bias_realized_minus_predicted": 0.001674772027833663,
+      "prediction_bias_ci95": [
+        0.0014465581091098335,
+        0.0019029859465574926
+      ],
+      "mean_cards_per_round": 5.468034278237725,
+      "mean_cards_per_shoe": 106.3451434,
+      "max_cards_per_shoe": 117,
+      "hidden_cards_mucked": 19083461,
+      "reshuffle_policy": "104",
+      "method": "composition",
+      "betting": "ramp",
+      "shared_play_runtime_seconds": 15.776931240998882,
+      "expected_profit_per_round_family_ci95": [
+        -0.0035371899904607933,
+        -0.0024374181317364783
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.0030672568217907617,
+        -0.0021136878836754904
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 97242572,
+      "expected_profit_per_round": -0.0019409297401142371,
+      "profit_per_round_se": 0.0002036868750524737,
+      "profit_per_round_ci95": [
+        -0.0023401560152170858,
+        -0.0015417034650113887
+      ],
+      "profit_relative_to_initial_wagers": -0.0013777806892817624,
+      "profit_relative_to_initial_wagers_se": 0.00014457748843296048,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.001661152566610365,
+        -0.00109440881195316
+      ],
+      "round_profit_variance": 4.040694642126289,
+      "long_run_variance_per_round": 4.034433188013123,
+      "total_profit": -188741,
+      "total_initial_wagers": 136989146,
+      "mean_initial_bet": 1.408736350576988,
+      "observed_bet_range": [
+        1,
+        4
+      ],
+      "fraction_raised_bets": 0.13624545019232934,
+      "mean_predicted_unit_edge": -0.006057055334778723,
+      "mean_realized_unit_profit": -0.004382283306945028,
+      "prediction_bias_realized_minus_predicted": 0.001674772027833663,
+      "prediction_bias_ci95": [
+        0.0014465581091098335,
+        0.0019029859465574926
+      ],
+      "mean_cards_per_round": 5.468034278237725,
+      "mean_cards_per_shoe": 106.3451434,
+      "max_cards_per_shoe": 117,
+      "hidden_cards_mucked": 19083461,
+      "reshuffle_policy": "104",
+      "method": "composition",
+      "betting": "positive-step",
+      "shared_play_runtime_seconds": 15.776931240998882,
+      "expected_profit_per_round_family_ci95": [
+        -0.002702773413738157,
+        -0.0011790860664903174
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.0019185393654738872,
+        -0.0008370220130896376
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 144627708,
+      "expected_profit_per_round": -0.004786921604261336,
+      "profit_per_round_se": 9.494044480916355e-05,
+      "profit_per_round_ci95": [
+        -0.004973004876087296,
+        -0.0046008383324353756
+      ],
+      "profit_relative_to_initial_wagers": -0.004786921604261336,
+      "profit_relative_to_initial_wagers_se": 9.494044480916355e-05,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.004973004876087296,
+        -0.0046008383324353756
+      ],
+      "round_profit_variance": 1.3091328403078513,
+      "long_run_variance_per_round": 1.3036290448260226,
+      "total_profit": -692321.5,
+      "total_initial_wagers": 144627708,
+      "mean_initial_bet": 1.0,
+      "observed_bet_range": [
+        1,
+        1
+      ],
+      "fraction_raised_bets": 0.0,
+      "mean_predicted_unit_edge": -0.006521546200132133,
+      "mean_realized_unit_profit": -0.004786921604261336,
+      "prediction_bias_realized_minus_predicted": 0.0017346245958705727,
+      "prediction_bias_ci95": [
+        0.0015482230362957507,
+        0.0019210261554453946
+      ],
+      "mean_cards_per_round": 5.474341527973325,
+      "mean_cards_per_shoe": 158.3482936,
+      "max_cards_per_shoe": 170,
+      "hidden_cards_mucked": 29418251,
+      "reshuffle_policy": "156",
+      "method": "baseline",
+      "betting": "constant",
+      "shared_play_runtime_seconds": 10.620446696000803,
+      "expected_profit_per_round_family_ci95": [
+        -0.005142024392451633,
+        -0.0044318188160710386
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.005142024392451633,
+        -0.0044318188160710386
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 144627708,
+      "expected_profit_per_round": -0.002685984451563073,
+      "profit_per_round_se": 0.00012988673532860688,
+      "profit_per_round_ci95": [
+        -0.0029405624528071428,
+        -0.0024314064503190035
+      ],
+      "profit_relative_to_initial_wagers": -0.0021960322939219763,
+      "profit_relative_to_initial_wagers_se": 0.00010618518552837179,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.002404155257557585,
+        -0.0019879093302863676
+      ],
+      "round_profit_variance": 2.4511766341384025,
+      "long_run_variance_per_round": 2.439951006058898,
+      "total_profit": -388467.77495320427,
+      "total_initial_wagers": 176895292.4910886,
+      "mean_initial_bet": 1.2231079019179962,
+      "observed_bet_range": [
+        1,
+        4
+      ],
+      "fraction_raised_bets": 0.17603639269454507,
+      "mean_predicted_unit_edge": -0.006521546200132133,
+      "mean_realized_unit_profit": -0.004786921604261336,
+      "prediction_bias_realized_minus_predicted": 0.0017346245958705727,
+      "prediction_bias_ci95": [
+        0.0015482230362957507,
+        0.0019210261554453946
+      ],
+      "mean_cards_per_round": 5.474341527973325,
+      "mean_cards_per_shoe": 158.3482936,
+      "max_cards_per_shoe": 170,
+      "hidden_cards_mucked": 29418251,
+      "reshuffle_policy": "156",
+      "method": "baseline",
+      "betting": "ramp",
+      "shared_play_runtime_seconds": 10.620446696000803,
+      "expected_profit_per_round_family_ci95": [
+        -0.003171795761556765,
+        -0.0022001731415693814
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.002593193435534718,
+        -0.001798871152309235
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 144627708,
+      "expected_profit_per_round": -0.0014689681730972325,
+      "profit_per_round_se": 0.00017993476175350514,
+      "profit_per_round_ci95": [
+        -0.0018216403061341025,
+        -0.0011162960400603625
+      ],
+      "profit_relative_to_initial_wagers": -0.0009612979191312953,
+      "profit_relative_to_initial_wagers_se": 0.00011774468157598153,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.0011920774950202192,
+        -0.0007305183432423716
+      ],
+      "round_profit_variance": 4.6985491995943836,
+      "long_run_variance_per_round": 4.682541661836475,
+      "total_profit": -212453.5,
+      "total_initial_wagers": 221006928,
+      "mean_initial_bet": 1.5281091780836353,
+      "observed_bet_range": [
+        1,
+        4
+      ],
+      "fraction_raised_bets": 0.17603639269454507,
+      "mean_predicted_unit_edge": -0.006521546200132133,
+      "mean_realized_unit_profit": -0.004786921604261336,
+      "prediction_bias_realized_minus_predicted": 0.0017346245958705727,
+      "prediction_bias_ci95": [
+        0.0015482230362957507,
+        0.0019210261554453946
+      ],
+      "mean_cards_per_round": 5.474341527973325,
+      "mean_cards_per_shoe": 158.3482936,
+      "max_cards_per_shoe": 170,
+      "hidden_cards_mucked": 29418251,
+      "reshuffle_policy": "156",
+      "method": "baseline",
+      "betting": "positive-step",
+      "shared_play_runtime_seconds": 10.620446696000803,
+      "expected_profit_per_round_family_ci95": [
+        -0.002141972557261014,
+        -0.000795963788933451
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.001401694683716226,
+        -0.0005209011545463647
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 144819293,
+      "expected_profit_per_round": -0.004523040310658056,
+      "profit_per_round_se": 9.511902797590094e-05,
+      "profit_per_round_ci95": [
+        -0.004709473605490821,
+        -0.00433660701582529
+      ],
+      "profit_relative_to_initial_wagers": -0.004523040310658056,
+      "profit_relative_to_initial_wagers_se": 9.511902797590094e-05,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.004709473605490821,
+        -0.00433660701582529
+      ],
+      "round_profit_variance": 1.3163353314554924,
+      "long_run_variance_per_round": 1.3102713050656338,
+      "total_profit": -655023.5,
+      "total_initial_wagers": 144819293,
+      "mean_initial_bet": 1.0,
+      "observed_bet_range": [
+        1,
+        1
+      ],
+      "fraction_raised_bets": 0.0,
+      "mean_predicted_unit_edge": -0.006107906818789779,
+      "mean_realized_unit_profit": -0.004523040310658056,
+      "prediction_bias_realized_minus_predicted": 0.0015848665081314604,
+      "prediction_bias_ci95": [
+        0.001398109138461515,
+        0.0017716238778014057
+      ],
+      "mean_cards_per_round": 5.4670320963381585,
+      "mean_cards_per_shoe": 158.3463446,
+      "max_cards_per_shoe": 170,
+      "hidden_cards_mucked": 28405111,
+      "reshuffle_policy": "156",
+      "method": "hilo",
+      "betting": "constant",
+      "shared_play_runtime_seconds": 12.986977198000067,
+      "expected_profit_per_round_family_ci95": [
+        -0.004878811047903782,
+        -0.004167269573412329
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.004878811047903782,
+        -0.004167269573412329
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 144819293,
+      "expected_profit_per_round": -0.0018779066845016157,
+      "profit_per_round_se": 0.00013687454771344103,
+      "profit_per_round_ci95": [
+        -0.00214618079801996,
+        -0.0016096325709832712
+      ],
+      "profit_relative_to_initial_wagers": -0.0014950490575702015,
+      "profit_relative_to_initial_wagers_se": 0.00010896220562516807,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.0017086149805955308,
+        -0.0012814831345448721
+      ],
+      "round_profit_variance": 2.728377390285332,
+      "long_run_variance_per_round": 2.713137581787184,
+      "total_profit": -271957.11836949806,
+      "total_initial_wagers": 181905146.85283366,
+      "mean_initial_bet": 1.2560836549093888,
+      "observed_bet_range": [
+        1,
+        4
+      ],
+      "fraction_raised_bets": 0.17745214375545942,
+      "mean_predicted_unit_edge": -0.006107906818789779,
+      "mean_realized_unit_profit": -0.004523040310658056,
+      "prediction_bias_realized_minus_predicted": 0.0015848665081314604,
+      "prediction_bias_ci95": [
+        0.001398109138461515,
+        0.0017716238778014057
+      ],
+      "mean_cards_per_round": 5.4670320963381585,
+      "mean_cards_per_shoe": 158.3463446,
+      "max_cards_per_shoe": 170,
+      "hidden_cards_mucked": 28405111,
+      "reshuffle_policy": "156",
+      "method": "hilo",
+      "betting": "ramp",
+      "shared_play_runtime_seconds": 12.986977198000067,
+      "expected_profit_per_round_family_ci95": [
+        -0.002389854291478043,
+        -0.0013659590775251884
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.001902597000942878,
+        -0.001087501114197525
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 144819293,
+      "expected_profit_per_round": -0.0007229423499533311,
+      "profit_per_round_se": 0.00018274008199853448,
+      "profit_per_round_ci95": [
+        -0.0010811129106704587,
+        -0.0003647717892362036
+      ],
+      "profit_relative_to_initial_wagers": -0.00047178472005750857,
+      "profit_relative_to_initial_wagers_se": 0.00011925148420729377,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.0007055176291038043,
+        -0.00023805181101121278
+      ],
+      "round_profit_variance": 4.859022187125494,
+      "long_run_variance_per_round": 4.8360864292042605,
+      "total_profit": -104696,
+      "total_initial_wagers": 221914775,
+      "mean_initial_bet": 1.5323564312663782,
+      "observed_bet_range": [
+        1,
+        4
+      ],
+      "fraction_raised_bets": 0.17745214375545942,
+      "mean_predicted_unit_edge": -0.006107906818789779,
+      "mean_realized_unit_profit": -0.004523040310658056,
+      "prediction_bias_realized_minus_predicted": 0.0015848665081314604,
+      "prediction_bias_ci95": [
+        0.001398109138461515,
+        0.0017716238778014057
+      ],
+      "mean_cards_per_round": 5.4670320963381585,
+      "mean_cards_per_shoe": 158.3463446,
+      "max_cards_per_shoe": 170,
+      "hidden_cards_mucked": 28405111,
+      "reshuffle_policy": "156",
+      "method": "hilo",
+      "betting": "positive-step",
+      "shared_play_runtime_seconds": 12.986977198000067,
+      "expected_profit_per_round_family_ci95": [
+        -0.0014064393860398943,
+        -3.944531386676812e-05
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.0009178173315852988,
+        -2.5752108529718287e-05
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 144833731,
+      "expected_profit_per_round": -0.004442632220804973,
+      "profit_per_round_se": 9.510766873040201e-05,
+      "profit_per_round_ci95": [
+        -0.00462904325151656,
+        -0.004256221190093385
+      ],
+      "profit_relative_to_initial_wagers": -0.004442632220804973,
+      "profit_relative_to_initial_wagers_se": 9.510766873040201e-05,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.00462904325151656,
+        -0.004256221190093385
+      ],
+      "round_profit_variance": 1.3167725646686266,
+      "long_run_variance_per_round": 1.3100889734159353,
+      "total_profit": -643443,
+      "total_initial_wagers": 144833731,
+      "mean_initial_bet": 1.0,
+      "observed_bet_range": [
+        1,
+        1
+      ],
+      "fraction_raised_bets": 0.0,
+      "mean_predicted_unit_edge": -0.006144388794721194,
+      "mean_realized_unit_profit": -0.004442632220804973,
+      "prediction_bias_realized_minus_predicted": 0.0017017565739166618,
+      "prediction_bias_ci95": [
+        0.001515003338856066,
+        0.0018885098089772576
+      ],
+      "mean_cards_per_round": 5.46646153167179,
+      "mean_cards_per_shoe": 158.3456038,
+      "max_cards_per_shoe": 170,
+      "hidden_cards_mucked": 28349273,
+      "reshuffle_policy": "156",
+      "method": "halves",
+      "betting": "constant",
+      "shared_play_runtime_seconds": 14.126806579000666,
+      "expected_profit_per_round_family_ci95": [
+        -0.004798360471418617,
+        -0.0040869039701913286
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.004798360471418617,
+        -0.0040869039701913286
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 144833731,
+      "expected_profit_per_round": -0.001614382202119348,
+      "profit_per_round_se": 0.0001379889672029817,
+      "profit_per_round_ci95": [
+        -0.0018848405778371922,
+        -0.001343923826401504
+      ],
+      "profit_relative_to_initial_wagers": -0.0012802679274153143,
+      "profit_relative_to_initial_wagers_se": 0.00010942432583281879,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.001494739606047639,
+        -0.0010657962487829896
+      ],
+      "round_profit_variance": 2.775637148276985,
+      "long_run_variance_per_round": 2.757772564554615,
+      "total_profit": -233816.9975929413,
+      "total_initial_wagers": 182631301.29721037,
+      "mean_initial_bet": 1.2609721508673306,
+      "observed_bet_range": [
+        1,
+        4
+      ],
+      "fraction_raised_bets": 0.18349318778510235,
+      "mean_predicted_unit_edge": -0.006144388794721194,
+      "mean_realized_unit_profit": -0.004442632220804973,
+      "prediction_bias_realized_minus_predicted": 0.0017017565739166618,
+      "prediction_bias_ci95": [
+        0.001515003338856066,
+        0.0018885098089772576
+      ],
+      "mean_cards_per_round": 5.46646153167179,
+      "mean_cards_per_shoe": 158.3456038,
+      "max_cards_per_shoe": 170,
+      "hidden_cards_mucked": 28349273,
+      "reshuffle_policy": "156",
+      "method": "halves",
+      "betting": "ramp",
+      "shared_play_runtime_seconds": 14.126806579000666,
+      "expected_profit_per_round_family_ci95": [
+        -0.0021304980375967575,
+        -0.0010982663666419387
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.0016895443246049673,
+        -0.0008709915302256612
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 144833731,
+      "expected_profit_per_round": -0.0003335790610821177,
+      "profit_per_round_se": 0.00018520855578680714,
+      "profit_per_round_ci95": [
+        -0.0006965878304242597,
+        2.9429708260024284e-05
+      ],
+      "profit_relative_to_initial_wagers": -0.00021514573230506674,
+      "profit_relative_to_initial_wagers_se": 0.00011945109575031324,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.0004492698799756807,
+        1.897841536554722e-05
+      ],
+      "round_profit_variance": 4.991714116883642,
+      "long_run_variance_per_round": 4.968116930801114,
+      "total_profit": -48313.5,
+      "total_initial_wagers": 224561740,
+      "mean_initial_bet": 1.550479563355307,
+      "observed_bet_range": [
+        1,
+        4
+      ],
+      "fraction_raised_bets": 0.18349318778510235,
+      "mean_predicted_unit_edge": -0.006144388794721194,
+      "mean_realized_unit_profit": -0.004442632220804973,
+      "prediction_bias_realized_minus_predicted": 0.0017017565739166618,
+      "prediction_bias_ci95": [
+        0.001515003338856066,
+        0.0018885098089772576
+      ],
+      "mean_cards_per_round": 5.46646153167179,
+      "mean_cards_per_shoe": 158.3456038,
+      "max_cards_per_shoe": 170,
+      "hidden_cards_mucked": 28349273,
+      "reshuffle_policy": "156",
+      "method": "halves",
+      "betting": "positive-step",
+      "shared_play_runtime_seconds": 14.126806579000666,
+      "expected_profit_per_round_family_ci95": [
+        -0.0010263088527824999,
+        0.00035915073061826443
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.0006619249446690302,
+        0.00023163348005889676
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 144825010,
+      "expected_profit_per_round": -0.004360783403363825,
+      "profit_per_round_se": 9.519710582876683e-05,
+      "profit_per_round_ci95": [
+        -0.004547369730788208,
+        -0.004174197075939442
+      ],
+      "profit_relative_to_initial_wagers": -0.004360783403363825,
+      "profit_relative_to_initial_wagers_se": 9.519710582876683e-05,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.004547369730788208,
+        -0.004174197075939442
+      ],
+      "round_profit_variance": 1.3183858761346623,
+      "long_run_variance_per_round": 1.3124750539923564,
+      "total_profit": -631550.5,
+      "total_initial_wagers": 144825010,
+      "mean_initial_bet": 1.0,
+      "observed_bet_range": [
+        1,
+        1
+      ],
+      "fraction_raised_bets": 0.0,
+      "mean_predicted_unit_edge": -0.00616648268169472,
+      "mean_realized_unit_profit": -0.004360783403363825,
+      "prediction_bias_realized_minus_predicted": 0.0018056992783312877,
+      "prediction_bias_ci95": [
+        0.001618782380273308,
+        0.0019926161763892673
+      ],
+      "mean_cards_per_round": 5.466783416759301,
+      "mean_cards_per_shoe": 158.3453926,
+      "max_cards_per_shoe": 170,
+      "hidden_cards_mucked": 28382227,
+      "reshuffle_policy": "156",
+      "method": "hiopt2-ace",
+      "betting": "constant",
+      "shared_play_runtime_seconds": 14.899783522998481,
+      "expected_profit_per_round_family_ci95": [
+        -0.00471684617277039,
+        -0.00400472063395726
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.00471684617277039,
+        -0.00400472063395726
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 144825010,
+      "expected_profit_per_round": -0.0015460010484455318,
+      "profit_per_round_se": 0.000136966345762152,
+      "profit_per_round_ci95": [
+        -0.0018144550861393498,
+        -0.001277547010751714
+      ],
+      "profit_relative_to_initial_wagers": -0.00123317473346902,
+      "profit_relative_to_initial_wagers_se": 0.00010924598902857866,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.001447296871965034,
+        -0.0010190525949730059
+      ],
+      "round_profit_variance": 2.73262443656247,
+      "long_run_variance_per_round": 2.7168853074787167,
+      "total_profit": -223899.61730113463,
+      "total_initial_wagers": 181563578.31893533,
+      "mean_initial_bet": 1.2536755793694427,
+      "observed_bet_range": [
+        1,
+        4
+      ],
+      "fraction_raised_bets": 0.18064718241690436,
+      "mean_predicted_unit_edge": -0.00616648268169472,
+      "mean_realized_unit_profit": -0.004360783403363825,
+      "prediction_bias_realized_minus_predicted": 0.0018056992783312877,
+      "prediction_bias_ci95": [
+        0.001618782380273308,
+        0.0019926161763892673
+      ],
+      "mean_cards_per_round": 5.466783416759301,
+      "mean_cards_per_shoe": 158.3453926,
+      "max_cards_per_shoe": 170,
+      "hidden_cards_mucked": 28382227,
+      "reshuffle_policy": "156",
+      "method": "hiopt2-ace",
+      "betting": "ramp",
+      "shared_play_runtime_seconds": 14.899783522998481,
+      "expected_profit_per_round_family_ci95": [
+        -0.002058292004803913,
+        -0.0010337100920871504
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.001641784103065218,
+        -0.000824565363872822
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 144825010,
+      "expected_profit_per_round": -0.0002634248048731362,
+      "profit_per_round_se": 0.00018426066866326,
+      "profit_per_round_ci95": [
+        -0.0006245757154531258,
+        9.772610570685339e-05
+      ],
+      "profit_relative_to_initial_wagers": -0.0001708396828289785,
+      "profit_relative_to_initial_wagers_se": 0.000119498093329224,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.00040505594575425755,
+        6.337658009630056e-05
+      ],
+      "round_profit_variance": 4.938726530729824,
+      "long_run_variance_per_round": 4.917097872920694,
+      "total_profit": -38150.5,
+      "total_initial_wagers": 223311700,
+      "mean_initial_bet": 1.5419415472507132,
+      "observed_bet_range": [
+        1,
+        4
+      ],
+      "fraction_raised_bets": 0.18064718241690436,
+      "mean_predicted_unit_edge": -0.00616648268169472,
+      "mean_realized_unit_profit": -0.004360783403363825,
+      "prediction_bias_realized_minus_predicted": 0.0018056992783312877,
+      "prediction_bias_ci95": [
+        0.001618782380273308,
+        0.0019926161763892673
+      ],
+      "mean_cards_per_round": 5.466783416759301,
+      "mean_cards_per_shoe": 158.3453926,
+      "max_cards_per_shoe": 170,
+      "hidden_cards_mucked": 28382227,
+      "reshuffle_policy": "156",
+      "method": "hiopt2-ace",
+      "betting": "positive-step",
+      "shared_play_runtime_seconds": 14.899783522998481,
+      "expected_profit_per_round_family_ci95": [
+        -0.0009526092438933422,
+        0.00042575963414706987
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.0006177946787733008,
+        0.0002761153131153437
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 144826158,
+      "expected_profit_per_round": -0.004372873718019917,
+      "profit_per_round_se": 9.519926644380226e-05,
+      "profit_per_round_ci95": [
+        -0.00455946428024977,
+        -0.004186283155790065
+      ],
+      "profit_relative_to_initial_wagers": -0.004372873718019917,
+      "profit_relative_to_initial_wagers_se": 9.519926644380226e-05,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.00455946428024977,
+        -0.004186283155790065
+      ],
+      "round_profit_variance": 1.3185461902583282,
+      "long_run_variance_per_round": 1.3125450353391002,
+      "total_profit": -633306.5,
+      "total_initial_wagers": 144826158,
+      "mean_initial_bet": 1.0,
+      "observed_bet_range": [
+        1,
+        1
+      ],
+      "fraction_raised_bets": 0.0,
+      "mean_predicted_unit_edge": -0.006157436474886793,
+      "mean_realized_unit_profit": -0.004372873718019917,
+      "prediction_bias_realized_minus_predicted": 0.0017845627568667055,
+      "prediction_bias_ci95": [
+        0.0015976344894210264,
+        0.0019714910243123847
+      ],
+      "mean_cards_per_round": 5.466744660864372,
+      "mean_cards_per_shoe": 158.3455252,
+      "max_cards_per_shoe": 170,
+      "hidden_cards_mucked": 28368735,
+      "reshuffle_policy": "156",
+      "method": "omega2-ace",
+      "betting": "constant",
+      "shared_play_runtime_seconds": 10.705391397999673,
+      "expected_profit_per_round_family_ci95": [
+        -0.004728944568707593,
+        -0.0040168028673322415
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.004728944568707593,
+        -0.0040168028673322415
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 144826158,
+      "expected_profit_per_round": -0.0015833205205050091,
+      "profit_per_round_se": 0.00013771534963650823,
+      "profit_per_round_ci95": [
+        -0.0018532426057925652,
+        -0.0013133984352174531
+      ],
+      "profit_relative_to_initial_wagers": -0.0012580957734503566,
+      "profit_relative_to_initial_wagers_se": 0.00010942158156505972,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.0014725620733178737,
+        -0.0010436294735828395
+      ],
+      "round_profit_variance": 2.7631830781703806,
+      "long_run_variance_per_round": 2.7467030377006587,
+      "total_profit": -229306.22786730068,
+      "total_initial_wagers": 182264524.4554181,
+      "mean_initial_bet": 1.25850555571196,
+      "observed_bet_range": [
+        1,
+        4
+      ],
+      "fraction_raised_bets": 0.1827998571915441,
+      "mean_predicted_unit_edge": -0.006157436474886793,
+      "mean_realized_unit_profit": -0.004372873718019917,
+      "prediction_bias_realized_minus_predicted": 0.0017845627568667055,
+      "prediction_bias_ci95": [
+        0.0015976344894210264,
+        0.0019714910243123847
+      ],
+      "mean_cards_per_round": 5.466744660864372,
+      "mean_cards_per_shoe": 158.3455252,
+      "max_cards_per_shoe": 170,
+      "hidden_cards_mucked": 28368735,
+      "reshuffle_policy": "156",
+      "method": "omega2-ace",
+      "betting": "ramp",
+      "shared_play_runtime_seconds": 10.705391397999673,
+      "expected_profit_per_round_family_ci95": [
+        -0.002098412952722113,
+        -0.0010682280882879053
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.0016673619063407982,
+        -0.000848829640559915
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 144826158,
+      "expected_profit_per_round": -0.00043026412397130634,
+      "profit_per_round_se": 0.00018506604042541167,
+      "profit_per_round_ci95": [
+        -0.0007929935632051133,
+        -6.753468473749946e-05
+      ],
+      "profit_relative_to_initial_wagers": -0.00027787667464526146,
+      "profit_relative_to_initial_wagers_se": 0.00011951912971328924,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.0005121341688833084,
+        -4.3619180407214534e-05
+      ],
+      "round_profit_variance": 4.982021800500545,
+      "long_run_variance_per_round": 4.960214710187266,
+      "total_profit": -62313.5,
+      "total_initial_wagers": 224248761,
+      "mean_initial_bet": 1.5483995715746321,
+      "observed_bet_range": [
+        1,
+        4
+      ],
+      "fraction_raised_bets": 0.1827998571915441,
+      "mean_predicted_unit_edge": -0.006157436474886793,
+      "mean_realized_unit_profit": -0.004372873718019917,
+      "prediction_bias_realized_minus_predicted": 0.0017845627568667055,
+      "prediction_bias_ci95": [
+        0.0015976344894210264,
+        0.0019714910243123847
+      ],
+      "mean_cards_per_round": 5.466744660864372,
+      "mean_cards_per_shoe": 158.3455252,
+      "max_cards_per_shoe": 170,
+      "hidden_cards_mucked": 28368735,
+      "reshuffle_policy": "156",
+      "method": "omega2-ace",
+      "betting": "positive-step",
+      "shared_play_runtime_seconds": 10.705391397999673,
+      "expected_profit_per_round_family_ci95": [
+        -0.0011224608699050165,
+        0.0002619326219624038
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.0007249103523215897,
+        0.00016915700303106685
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 144824805,
+      "expected_profit_per_round": -0.004470121675634226,
+      "profit_per_round_se": 9.51330680566581e-05,
+      "profit_per_round_ci95": [
+        -0.004656582489025276,
+        -0.004283660862243176
+      ],
+      "profit_relative_to_initial_wagers": -0.004470121675634226,
+      "profit_relative_to_initial_wagers_se": 9.51330680566581e-05,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.004656582489025276,
+        -0.004283660862243176
+      ],
+      "round_profit_variance": 1.3169021312510247,
+      "long_run_variance_per_round": 1.3107080250712952,
+      "total_profit": -647384.5,
+      "total_initial_wagers": 144824805,
+      "mean_initial_bet": 1.0,
+      "observed_bet_range": [
+        1,
+        1
+      ],
+      "fraction_raised_bets": 0.0,
+      "mean_predicted_unit_edge": -0.006162185357549977,
+      "mean_realized_unit_profit": -0.004470121675634226,
+      "prediction_bias_realized_minus_predicted": 0.001692063681915986,
+      "prediction_bias_ci95": [
+        0.0015052772703337798,
+        0.0018788500934981923
+      ],
+      "mean_cards_per_round": 5.466795594856834,
+      "mean_cards_per_shoe": 158.3455212,
+      "max_cards_per_shoe": 170,
+      "hidden_cards_mucked": 28397857,
+      "reshuffle_policy": "156",
+      "method": "ko-centered",
+      "betting": "constant",
+      "shared_play_runtime_seconds": 9.729267640999048,
+      "expected_profit_per_round_family_ci95": [
+        -0.004825944926556641,
+        -0.0041142984247118115
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.004825944926556641,
+        -0.0041142984247118115
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 144824805,
+      "expected_profit_per_round": -0.0017913073100184046,
+      "profit_per_round_se": 0.00013625794131406612,
+      "profit_per_round_ci95": [
+        -0.002058372874993974,
+        -0.0015242417450428351
+      ],
+      "profit_relative_to_initial_wagers": -0.0014331816179442066,
+      "profit_relative_to_initial_wagers_se": 0.00010900991245012877,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.001646841046346459,
+        -0.0012195221895419542
+      ],
+      "round_profit_variance": 2.704783472731049,
+      "long_run_variance_per_round": 2.6888501427522526,
+      "total_profit": -259425.73186849,
+      "total_initial_wagers": 181013856.59733558,
+      "mean_initial_bet": 1.2498815834575823,
+      "observed_bet_range": [
+        1,
+        4
+      ],
+      "fraction_raised_bets": 0.1796427207342002,
+      "mean_predicted_unit_edge": -0.006162185357549977,
+      "mean_realized_unit_profit": -0.004470121675634226,
+      "prediction_bias_realized_minus_predicted": 0.001692063681915986,
+      "prediction_bias_ci95": [
+        0.0015052772703337798,
+        0.0018788500934981923
+      ],
+      "mean_cards_per_round": 5.466795594856834,
+      "mean_cards_per_shoe": 158.3455212,
+      "max_cards_per_shoe": 170,
+      "hidden_cards_mucked": 28397857,
+      "reshuffle_policy": "156",
+      "method": "ko-centered",
+      "betting": "ramp",
+      "shared_play_runtime_seconds": 9.729267640999048,
+      "expected_profit_per_round_family_ci95": [
+        -0.002300948643287413,
+        -0.0012816659767493962
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.0018409079976681485,
+        -0.0010254552382202647
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 144824805,
+      "expected_profit_per_round": -0.0005933997287274097,
+      "profit_per_round_se": 0.00018371434523465033,
+      "profit_per_round_ci95": [
+        -0.0009534798453873243,
+        -0.00023331961206749506
+      ],
+      "profit_relative_to_initial_wagers": -0.0003855928712605419,
+      "profit_relative_to_initial_wagers_se": 0.0001193757477945358,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.0006195693369378321,
+        -0.00015161640558325172
+      ],
+      "round_profit_variance": 4.910403580407519,
+      "long_run_variance_per_round": 4.887976293974261,
+      "total_profit": -85939,
+      "total_initial_wagers": 222874971,
+      "mean_initial_bet": 1.5389281622026005,
+      "observed_bet_range": [
+        1,
+        4
+      ],
+      "fraction_raised_bets": 0.1796427207342002,
+      "mean_predicted_unit_edge": -0.006162185357549977,
+      "mean_realized_unit_profit": -0.004470121675634226,
+      "prediction_bias_realized_minus_predicted": 0.001692063681915986,
+      "prediction_bias_ci95": [
+        0.0015052772703337798,
+        0.0018788500934981923
+      ],
+      "mean_cards_per_round": 5.466795594856834,
+      "mean_cards_per_shoe": 158.3455212,
+      "max_cards_per_shoe": 170,
+      "hidden_cards_mucked": 28397857,
+      "reshuffle_policy": "156",
+      "method": "ko-centered",
+      "betting": "positive-step",
+      "shared_play_runtime_seconds": 9.729267640999048,
+      "expected_profit_per_round_family_ci95": [
+        -0.001280540771246336,
+        9.37413137915168e-05
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.0008320902620127066,
+        6.090451949162287e-05
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 144817864,
+      "expected_profit_per_round": -0.00412663178073114,
+      "profit_per_round_se": 9.521592787649323e-05,
+      "profit_per_round_ci95": [
+        -0.0043132549993690665,
+        -0.003940008562093213
+      ],
+      "profit_relative_to_initial_wagers": -0.00412663178073114,
+      "profit_relative_to_initial_wagers_se": 9.521592787649323e-05,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.0043132549993690665,
+        -0.003940008562093213
+      ],
+      "round_profit_variance": 1.318826283638471,
+      "long_run_variance_per_round": 1.3129293153427175,
+      "total_profit": -597610,
+      "total_initial_wagers": 144817864,
+      "mean_initial_bet": 1.0,
+      "observed_bet_range": [
+        1,
+        1
+      ],
+      "fraction_raised_bets": 0.0,
+      "mean_predicted_unit_edge": -0.006172317949689342,
+      "mean_realized_unit_profit": -0.00412663178073114,
+      "prediction_bias_realized_minus_predicted": 0.0020456861689589056,
+      "prediction_bias_ci95": [
+        0.0018587181454961204,
+        0.0022326541924216907
+      ],
+      "mean_cards_per_round": 5.467043927674558,
+      "mean_cards_per_shoe": 158.3451248,
+      "max_cards_per_shoe": 169,
+      "hidden_cards_mucked": 28285473,
+      "reshuffle_policy": "156",
+      "method": "composition",
+      "betting": "constant",
+      "shared_play_runtime_seconds": 23.78247836700415,
+      "expected_profit_per_round_family_ci95": [
+        -0.004482764949656483,
+        -0.003770498611805797
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.004482764949656483,
+        -0.003770498611805797
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 144817864,
+      "expected_profit_per_round": -0.0011539647248113053,
+      "profit_per_round_se": 0.00013840234510414985,
+      "profit_per_round_ci95": [
+        -0.001425233321215439,
+        -0.0008826961284071716
+      ],
+      "profit_relative_to_initial_wagers": -0.0009139299150213831,
+      "profit_relative_to_initial_wagers_se": 0.00010960904137908507,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.0011287636361243898,
+        -0.0006990961939183763
+      ],
+      "round_profit_variance": 2.788943579276998,
+      "long_run_variance_per_round": 2.7740164707274255,
+      "total_profit": -167114.70657852103,
+      "total_initial_wagers": 182852868.50973806,
+      "mean_initial_bet": 1.2626402811032902,
+      "observed_bet_range": [
+        1,
+        4
+      ],
+      "fraction_raised_bets": 0.18418390012989005,
+      "mean_predicted_unit_edge": -0.006172317949689342,
+      "mean_realized_unit_profit": -0.00412663178073114,
+      "prediction_bias_realized_minus_predicted": 0.0020456861689589056,
+      "prediction_bias_ci95": [
+        0.0018587181454961204,
+        0.0022326541924216907
+      ],
+      "mean_cards_per_round": 5.467043927674558,
+      "mean_cards_per_shoe": 158.3451248,
+      "max_cards_per_shoe": 169,
+      "hidden_cards_mucked": 28285473,
+      "reshuffle_policy": "156",
+      "method": "composition",
+      "betting": "ramp",
+      "shared_play_runtime_seconds": 23.78247836700415,
+      "expected_profit_per_round_family_ci95": [
+        -0.0016716267047751465,
+        -0.000636302744847464
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.0013238971980145849,
+        -0.0005039626320281813
+      ]
+    },
+    {
+      "shoes": 5000000,
+      "rounds": 144817864,
+      "expected_profit_per_round": 0.0001709595716727323,
+      "profit_per_round_se": 0.00018564167560137682,
+      "profit_per_round_ci95": [
+        -0.0001928981125059663,
+        0.0005348172558514309
+      ],
+      "profit_relative_to_initial_wagers": 0.00011011521975714155,
+      "profit_relative_to_initial_wagers_se": 0.00011957264137783306,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.00012424715734341127,
+        0.00034447759685769433
+      ],
+      "round_profit_variance": 5.008734262696921,
+      "long_run_variance_per_round": 4.990833677094419,
+      "total_profit": 24758,
+      "total_initial_wagers": 224837221,
+      "mean_initial_bet": 1.55255170038967,
+      "observed_bet_range": [
+        1,
+        4
+      ],
+      "fraction_raised_bets": 0.18418390012989005,
+      "mean_predicted_unit_edge": -0.006172317949689342,
+      "mean_realized_unit_profit": -0.00412663178073114,
+      "prediction_bias_realized_minus_predicted": 0.0020456861689589056,
+      "prediction_bias_ci95": [
+        0.0018587181454961204,
+        0.0022326541924216907
+      ],
+      "mean_cards_per_round": 5.467043927674558,
+      "mean_cards_per_shoe": 158.3451248,
+      "max_cards_per_shoe": 169,
+      "hidden_cards_mucked": 28285473,
+      "reshuffle_policy": "156",
+      "method": "composition",
+      "betting": "positive-step",
+      "shared_play_runtime_seconds": 23.78247836700415,
+      "expected_profit_per_round_family_ci95": [
+        -0.0005233902045777887,
+        0.0008653093479232533
+      ],
+      "profit_relative_to_initial_wagers_family_ci95": [
+        -0.0003371186059311158,
+        0.0005573490454453989
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "reshuffle_policy": "104",
+      "reference": "baseline/constant",
+      "candidate": "baseline/ramp",
+      "profit_per_round": {
+        "difference": 0.0010086714234709185,
+        "se": 5.244853595987646e-05,
+        "ci95": [
+          0.0009058722929895606,
+          0.0011114705539522764
+        ],
+        "family_ci95": [
+          0.0008124997982664242,
+          0.0012048430486754128
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.001428912298952186,
+        "se": 4.487238644060495e-05,
+        "ci95": [
+          0.0013409624215286002,
+          0.0015168621763757717
+        ],
+        "family_ci95": [
+          0.0012610775097868275,
+          0.0015967470881175444
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "baseline/constant",
+      "candidate": "baseline/positive-step",
+      "profit_per_round": {
+        "difference": 0.0019182354284919827,
+        "se": 0.00012384528012522397,
+        "ci95": [
+          0.0016754986794465438,
+          0.0021609721775374215
+        ],
+        "family_ci95": [
+          0.0014550207851956119,
+          0.0023814500717883537
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0027159082363773144,
+        "se": 8.349995673468259e-05,
+        "ci95": [
+          0.0025522483211773365,
+          0.0028795681515772923
+        ],
+        "family_ci95": [
+          0.0024035959493445796,
+          0.003028220523410049
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "baseline/constant",
+      "candidate": "hilo/constant",
+      "profit_per_round": {
+        "difference": 0.00017986003459783198,
+        "se": 4.627079221616628e-05,
+        "ci95": [
+          8.916928185414607e-05,
+          0.0002705507873415179
+        ],
+        "family_ci95": [
+          6.794831872463319e-06,
+          0.0003529252373232006
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.00017986003459783198,
+        "se": 4.627079221616628e-05,
+        "ci95": [
+          8.916928185414607e-05,
+          0.0002705507873415179
+        ],
+        "family_ci95": [
+          6.794831872463319e-06,
+          0.0003529252373232006
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "baseline/constant",
+      "candidate": "hilo/ramp",
+      "profit_per_round": {
+        "difference": 0.0014821584597938184,
+        "se": 8.167278514474024e-05,
+        "ci95": [
+          0.0013220798009101276,
+          0.0016422371186775092
+        ],
+        "family_ci95": [
+          0.0011766802857399602,
+          0.0017876366338476766
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0019103516873328545,
+        "se": 7.177132685857249e-05,
+        "ci95": [
+          0.0017696798866900525,
+          0.0020510234879756568
+        ],
+        "family_ci95": [
+          0.0016419076292622905,
+          0.0021787957454034185
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "baseline/constant",
+      "candidate": "hilo/positive-step",
+      "profit_per_round": {
+        "difference": 0.002372256490268286,
+        "se": 0.00014154057664166148,
+        "ci95": [
+          0.00209483696005063,
+          0.0026496760204859425
+        ],
+        "family_ci95": [
+          0.0018428566806450504,
+          0.002901656299891522
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0030472829935927564,
+        "se": 0.0001005786011893003,
+        "ci95": [
+          0.0028501489352617277,
+          0.003244417051923785
+        ],
+        "family_ci95": [
+          0.0026710919847303958,
+          0.003423474002455117
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "baseline/constant",
+      "candidate": "halves/constant",
+      "profit_per_round": {
+        "difference": 0.0002050644089993973,
+        "se": 4.759119436495674e-05,
+        "ci95": [
+          0.0001117856680440821,
+          0.0002983431499547125
+        ],
+        "family_ci95": [
+          2.7060547249306067e-05,
+          0.00038306827074948856
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0002050644089993973,
+        "se": 4.759119436495674e-05,
+        "ci95": [
+          0.0001117856680440821,
+          0.0002983431499547125
+        ],
+        "family_ci95": [
+          2.7060547249306067e-05,
+          0.00038306827074948856
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "baseline/constant",
+      "candidate": "halves/ramp",
+      "profit_per_round": {
+        "difference": 0.001545217364915706,
+        "se": 8.374724357763608e-05,
+        "ci95": [
+          0.0013810727675035391,
+          0.0017093619623278727
+        ],
+        "family_ci95": [
+          0.0012319801586076079,
+          0.001858454571223804
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0019718761725195104,
+        "se": 7.350294742971724e-05,
+        "ci95": [
+          0.0018278103955572647,
+          0.0021159419494817563
+        ],
+        "family_ci95": [
+          0.0016969553879691286,
+          0.002246796957069892
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "baseline/constant",
+      "candidate": "halves/positive-step",
+      "profit_per_round": {
+        "difference": 0.0025771817648898615,
+        "se": 0.00014514744132911988,
+        "ci95": [
+          0.0022926927798847868,
+          0.0028616707498949363
+        ],
+        "family_ci95": [
+          0.0020342913116350725,
+          0.0031200722181446506
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0032151282685162355,
+        "se": 0.00010181316039450605,
+        "ci95": [
+          0.0030155744741430035,
+          0.0034146820628894676
+        ],
+        "family_ci95": [
+          0.0028343196763169127,
+          0.0035959368607155584
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "baseline/constant",
+      "candidate": "hiopt2-ace/constant",
+      "profit_per_round": {
+        "difference": 0.000295675160530977,
+        "se": 4.86164497585571e-05,
+        "ci95": [
+          0.00020038691900420508,
+          0.0003909634020577489
+        ],
+        "family_ci95": [
+          0.00011383656797036093,
+          0.00047751375309159304
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.000295675160530977,
+        "se": 4.86164497585571e-05,
+        "ci95": [
+          0.00020038691900420508,
+          0.0003909634020577489
+        ],
+        "family_ci95": [
+          0.00011383656797036093,
+          0.00047751375309159304
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "baseline/constant",
+      "candidate": "hiopt2-ace/ramp",
+      "profit_per_round": {
+        "difference": 0.0016033311602313386,
+        "se": 8.298085048213396e-05,
+        "ci95": [
+          0.001440688693286356,
+          0.0017659736271763212
+        ],
+        "family_ci95": [
+          0.0012929604701441158,
+          0.0019137018503185613
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0020085318652468677,
+        "se": 7.326078807979068e-05,
+        "ci95": [
+          0.001864940720610478,
+          0.0021521230098832576
+        ],
+        "family_ci95": [
+          0.0017345168217694092,
+          0.002282546908724326
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "baseline/constant",
+      "candidate": "hiopt2-ace/positive-step",
+      "profit_per_round": {
+        "difference": 0.0026943274265992757,
+        "se": 0.00014399204792287296,
+        "ci95": [
+          0.0024121030126704446,
+          0.0029765518405281068
+        ],
+        "family_ci95": [
+          0.00215575845530973,
+          0.0032328963978888216
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0032889563364463543,
+        "se": 0.0001017743960474469,
+        "ci95": [
+          0.0030894785201933585,
+          0.00348843415269935
+        ],
+        "family_ci95": [
+          0.0029082927333267724,
+          0.003669619939565936
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "baseline/constant",
+      "candidate": "omega2-ace/constant",
+      "profit_per_round": {
+        "difference": 0.0002755263422525925,
+        "se": 4.870604096108396e-05,
+        "ci95": [
+          0.00018006250196886793,
+          0.00037099018253631703
+        ],
+        "family_ci95": [
+          9.335265450805815e-05,
+          0.0004577000299971268
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0002755263422525925,
+        "se": 4.870604096108396e-05,
+        "ci95": [
+          0.00018006250196886793,
+          0.00037099018253631703
+        ],
+        "family_ci95": [
+          9.335265450805815e-05,
+          0.0004577000299971268
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "baseline/constant",
+      "candidate": "omega2-ace/ramp",
+      "profit_per_round": {
+        "difference": 0.0015799796290714035,
+        "se": 8.400014317170313e-05,
+        "ci95": [
+          0.0014153393484548655,
+          0.0017446199096879415
+        ],
+        "family_ci95": [
+          0.0012657965102897972,
+          0.0018941627478530098
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0019975233213429156,
+        "se": 7.390039128003597e-05,
+        "ci95": [
+          0.001852678554434045,
+          0.002142368088251786
+        ],
+        "family_ci95": [
+          0.001721115989940126,
+          0.002273930652745705
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "baseline/constant",
+      "candidate": "omega2-ace/positive-step",
+      "profit_per_round": {
+        "difference": 0.002461265468510305,
+        "se": 0.00014514412044116173,
+        "ci95": [
+          0.0021767829924456282,
+          0.002745747944574982
+        ],
+        "family_ci95": [
+          0.0019183874362692951,
+          0.003004143500751315
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.00312991794276734,
+        "se": 0.00010206342527726372,
+        "ci95": [
+          0.0029298736292239034,
+          0.003329962256310777
+        ],
+        "family_ci95": [
+          0.0027481732926231445,
+          0.003511662592911536
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "baseline/constant",
+      "candidate": "ko-centered/constant",
+      "profit_per_round": {
+        "difference": 0.00018049001975501897,
+        "se": 4.704853577887532e-05,
+        "ci95": [
+          8.827488962842334e-05,
+          0.0002727051498816146
+        ],
+        "family_ci95": [
+          4.51584700986396e-06,
+          0.00035646419250017397
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.00018049001975501897,
+        "se": 4.704853577887532e-05,
+        "ci95": [
+          8.827488962842334e-05,
+          0.0002727051498816146
+        ],
+        "family_ci95": [
+          4.51584700986396e-06,
+          0.00035646419250017397
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "baseline/constant",
+      "candidate": "ko-centered/ramp",
+      "profit_per_round": {
+        "difference": 0.0014095845937609377,
+        "se": 8.124538555040494e-05,
+        "ci95": [
+          0.001250343638082144,
+          0.0015688255494397314
+        ],
+        "family_ci95": [
+          0.001105705009095669,
+          0.0017134641784262066
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0018312672958761956,
+        "se": 7.187379950918966e-05,
+        "ci95": [
+          0.001690394648838184,
+          0.001972139942914207
+        ],
+        "family_ci95": [
+          0.0015624399625426965,
+          0.002100094629209695
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "baseline/constant",
+      "candidate": "ko-centered/positive-step",
+      "profit_per_round": {
+        "difference": 0.0023778191852776294,
+        "se": 0.00014267411281666603,
+        "ci95": [
+          0.002098177924156964,
+          0.0026574604463982946
+        ],
+        "family_ci95": [
+          0.0018441796456102827,
+          0.002911458724944976
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0030570829229665296,
+        "se": 0.00010111604268439654,
+        "ci95": [
+          0.0028588954793051123,
+          0.003255270366627947
+        ],
+        "family_ci95": [
+          0.002678881738422125,
+          0.0034352841075109344
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "baseline/constant",
+      "candidate": "composition/constant",
+      "profit_per_round": {
+        "difference": 0.00039987479532074995,
+        "se": 5.158136712666964e-05,
+        "ci95": [
+          0.0002987753157524775,
+          0.0005009742748890224
+        ],
+        "family_ci95": [
+          0.00020694661468956081,
+          0.0005928029759519391
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.00039987479532074995,
+        "se": 5.158136712666964e-05,
+        "ci95": [
+          0.0002987753157524775,
+          0.0005009742748890224
+        ],
+        "family_ci95": [
+          0.00020694661468956081,
+          0.0005928029759519391
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "baseline/constant",
+      "candidate": "composition/ramp",
+      "profit_per_round": {
+        "difference": 0.0017948540411671424,
+        "se": 8.645966195266217e-05,
+        "ci95": [
+          0.0016253931037399246,
+          0.00196431497859436
+        ],
+        "family_ci95": [
+          0.001471471660906611,
+          0.002118236421427674
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.002191685749532652,
+        "se": 7.60120227131222e-05,
+        "ci95": [
+          0.0020427021850149326,
+          0.0023406693140503717
+        ],
+        "family_ci95": [
+          0.0019073803488610021,
+          0.0024759911502043024
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "baseline/constant",
+      "candidate": "composition/positive-step",
+      "profit_per_round": {
+        "difference": 0.002841228362151541,
+        "se": 0.00014663122334704308,
+        "ci95": [
+          0.0025538311643913364,
+          0.0031286255599117453
+        ],
+        "family_ci95": [
+          0.0022927881652370263,
+          0.0033896685590660554
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.003404377412984016,
+        "se": 0.00010304016348184802,
+        "ci95": [
+          0.0032024186925595937,
+          0.0036063361334084383
+        ],
+        "family_ci95": [
+          0.0030189794993599932,
+          0.003789775326608039
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "hilo/constant",
+      "candidate": "halves/constant",
+      "profit_per_round": {
+        "difference": 2.520437440156533e-05,
+        "se": 2.543399256796577e-05,
+        "ci95": [
+          -2.4646251031647578e-05,
+          7.505499983477825e-05
+        ],
+        "family_ci95": [
+          -6.992559569548043e-05,
+          0.00012033434449861109
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 2.520437440156533e-05,
+        "se": 2.543399256796577e-05,
+        "ci95": [
+          -2.4646251031647578e-05,
+          7.505499983477825e-05
+        ],
+        "family_ci95": [
+          -6.992559569548043e-05,
+          0.00012033434449861109
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "hilo/ramp",
+      "candidate": "halves/ramp",
+      "profit_per_round": {
+        "difference": 6.305890512188755e-05,
+        "se": 4.298087577645053e-05,
+        "ci95": [
+          -2.1183611399955488e-05,
+          0.00014730142164373058
+        ],
+        "family_ci95": [
+          -9.770112562957226e-05,
+          0.00022381893587334736
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 6.152448518665591e-05,
+        "se": 3.735457633034981e-05,
+        "ci95": [
+          -1.1690484420829721e-05,
+          0.00013473945479414154
+        ],
+        "family_ci95": [
+          -7.81916730137554e-05,
+          0.00020124064338706722
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "hilo/positive-step",
+      "candidate": "halves/positive-step",
+      "profit_per_round": {
+        "difference": 0.00020492527462157538,
+        "se": 8.854995103550203e-05,
+        "ci95": [
+          3.136737059199142e-05,
+          0.00037848317865115934
+        ],
+        "family_ci95": [
+          -0.00012627534878003444,
+          0.0005361258980231853
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.00016784527492347896,
+        "se": 6.32976159483712e-05,
+        "ci95": [
+          4.3781947664671406e-05,
+          0.0002919086021822865
+        ],
+        "family_ci95": [
+          -6.890482619776407e-05,
+          0.000404595376044722
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "hilo/constant",
+      "candidate": "hiopt2-ace/constant",
+      "profit_per_round": {
+        "difference": 0.000115815125933145,
+        "se": 3.508097427942872e-05,
+        "ci95": [
+          4.7056416345464715e-05,
+          0.0001845738355208253
+        ],
+        "family_ci95": [
+          -1.5397149342132467e-05,
+          0.0002470274012084225
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.000115815125933145,
+        "se": 3.508097427942872e-05,
+        "ci95": [
+          4.7056416345464715e-05,
+          0.0001845738355208253
+        ],
+        "family_ci95": [
+          -1.5397149342132467e-05,
+          0.0002470274012084225
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "hilo/ramp",
+      "candidate": "hiopt2-ace/ramp",
+      "profit_per_round": {
+        "difference": 0.00012117270043752017,
+        "se": 5.123447907247931e-05,
+        "ci95": [
+          2.075312145546073e-05,
+          0.0002215922794195796
+        ],
+        "family_ci95": [
+          -7.04580256106354e-05,
+          0.0003128034264856757
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 9.818017791401318e-05,
+        "se": 4.4644482027082374e-05,
+        "ci95": [
+          1.067699314093172e-05,
+          0.00018568336268709462
+        ],
+        "family_ci95": [
+          -6.880218747299234e-05,
+          0.0002651625433010187
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "hilo/positive-step",
+      "candidate": "hiopt2-ace/positive-step",
+      "profit_per_round": {
+        "difference": 0.00032207093633098956,
+        "se": 9.602943391504863e-05,
+        "ci95": [
+          0.00013385324585749427,
+          0.0005102886268044849
+        ],
+        "family_ci95": [
+          -3.7104963888495864e-05,
+          0.000681246836550475
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0002416733428535977,
+        "se": 6.889386424706156e-05,
+        "ci95": [
+          0.00010664136892935705,
+          0.00037670531677783836
+        ],
+        "family_ci95": [
+          -1.6008231448170714e-05,
+          0.0004993549171553661
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "hilo/constant",
+      "candidate": "omega2-ace/constant",
+      "profit_per_round": {
+        "difference": 9.56663076547605e-05,
+        "se": 3.548940234611126e-05,
+        "ci95": [
+          2.610707905638244e-05,
+          0.00016522553625313857
+        ],
+        "family_ci95": [
+          -3.7073598395216505e-05,
+          0.0002284062137047375
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 9.56663076547605e-05,
+        "se": 3.548940234611126e-05,
+        "ci95": [
+          2.610707905638244e-05,
+          0.00016522553625313857
+        ],
+        "family_ci95": [
+          -3.7073598395216505e-05,
+          0.0002284062137047375
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "hilo/ramp",
+      "candidate": "omega2-ace/ramp",
+      "profit_per_round": {
+        "difference": 9.782116927758511e-05,
+        "se": 5.232588472699662e-05,
+        "ci95": [
+          -4.737564787328253e-06,
+          0.00020037990334249847
+        ],
+        "family_ci95": [
+          -9.789170734132854e-05,
+          0.00029353404589649876
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 8.717163401006107e-05,
+        "se": 4.5518288300100813e-05,
+        "ci95": [
+          -2.0442110581365264e-06,
+          0.00017638747907825866
+        ],
+        "family_ci95": [
+          -8.307900175961145e-05,
+          0.0002574222697797336
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "hilo/positive-step",
+      "candidate": "omega2-ace/positive-step",
+      "profit_per_round": {
+        "difference": 8.900897824201887e-05,
+        "se": 9.71707064447076e-05,
+        "ci95": [
+          -0.00010144560638960802,
+          0.0002794635628736458
+        ],
+        "family_ci95": [
+          -0.0002744355880678932,
+          0.00045245354455193096
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 8.263494917458382e-05,
+        "se": 6.953287844502325e-05,
+        "ci95": [
+          -5.364949257766175e-05,
+          0.00021891939092682938
+        ],
+        "family_ci95": [
+          -0.00017743671002562271,
+          0.00034270660837479035
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "hilo/constant",
+      "candidate": "ko-centered/constant",
+      "profit_per_round": {
+        "difference": 6.299851571869852e-07,
+        "se": 2.4811794249168184e-05,
+        "ci95": [
+          -4.8001131571182656e-05,
+          4.926110188555663e-05
+        ],
+        "family_ci95": [
+          -9.217279595041965e-05,
+          9.343276626479362e-05
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 6.299851571869852e-07,
+        "se": 2.4811794249168184e-05,
+        "ci95": [
+          -4.8001131571182656e-05,
+          4.926110188555663e-05
+        ],
+        "family_ci95": [
+          -9.217279595041965e-05,
+          9.343276626479362e-05
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "hilo/ramp",
+      "candidate": "ko-centered/ramp",
+      "profit_per_round": {
+        "difference": -7.257386603288065e-05,
+        "se": 4.063593993309752e-05,
+        "ci95": [
+          -0.00015222030830175178,
+          7.072576235990486e-06
+        ],
+        "family_ci95": [
+          -0.00022456320629752225,
+          7.941547423176095e-05
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": -7.908439145665885e-05,
+        "se": 3.544749277917995e-05,
+        "ci95": [
+          -0.00014856147730385157,
+          -9.60730560946615e-06
+        ],
+        "family_ci95": [
+          -0.0002116675444589851,
+          5.34987615456674e-05
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "hilo/positive-step",
+      "candidate": "ko-centered/positive-step",
+      "profit_per_round": {
+        "difference": 5.562695009343234e-06,
+        "se": 8.582304429571417e-05,
+        "ci95": [
+          -0.00016265047181025655,
+          0.00017377586182894302
+        ],
+        "family_ci95": [
+          -0.0003154385640604479,
+          0.00032656395407913436
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 9.799929373773475e-06,
+        "se": 6.167747897664873e-05,
+        "ci95": [
+          -0.00011108792942045804,
+          0.00013068778816800497
+        ],
+        "family_ci95": [
+          -0.0002208904239016989,
+          0.00024049028264924586
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "hilo/constant",
+      "candidate": "composition/constant",
+      "profit_per_round": {
+        "difference": 0.00022001476072291797,
+        "se": 4.5671271992939e-05,
+        "ci95": [
+          0.00013049906761675753,
+          0.0003095304538290784
+        ],
+        "family_ci95": [
+          4.919192481258163e-05,
+          0.0003908375966332543
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.00022001476072291797,
+        "se": 4.5671271992939e-05,
+        "ci95": [
+          0.00013049906761675753,
+          0.0003095304538290784
+        ],
+        "family_ci95": [
+          4.919192481258163e-05,
+          0.0003908375966332543
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "hilo/ramp",
+      "candidate": "composition/ramp",
+      "profit_per_round": {
+        "difference": 0.00031269558137332404,
+        "se": 6.53789013627709e-05,
+        "ci95": [
+          0.00018455293470229307,
+          0.00044083822804435503
+        ],
+        "family_ci95": [
+          6.816091325159235e-05,
+          0.0005572302494950557
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.00028133406219979767,
+        "se": 5.678730695715369e-05,
+        "ci95": [
+          0.00017003094056377644,
+          0.0003926371838358189
+        ],
+        "family_ci95": [
+          6.893426699305325e-05,
+          0.0004937338574065421
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "hilo/positive-step",
+      "candidate": "composition/positive-step",
+      "profit_per_round": {
+        "difference": 0.00046897187188325493,
+        "se": 0.00010976869539846842,
+        "ci95": [
+          0.0002538252289022568,
+          0.0006841185148642531
+        ],
+        "family_ci95": [
+          5.8407439934802575e-05,
+          0.0008795363038317073
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0003570944193912594,
+        "se": 7.842842070409937e-05,
+        "ci95": [
+          0.00020337471481122468,
+          0.0005108141239712942
+        ],
+        "family_ci95": [
+          6.37510405881797e-05,
+          0.0006504377981943392
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "hilo/constant",
+      "candidate": "hilo/ramp",
+      "profit_per_round": {
+        "difference": 0.0013022984251959864,
+        "se": 6.071459687585645e-05,
+        "ci95": [
+          0.0011832978153193078,
+          0.001421299035072665
+        ],
+        "family_ci95": [
+          0.0010752095098469651,
+          0.0015293873405450077
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0017304916527350225,
+        "se": 5.060464183855963e-05,
+        "ci95": [
+          0.0016313065547314456,
+          0.0018296767507385995
+        ],
+        "family_ci95": [
+          0.0015412166872725741,
+          0.001919766618197471
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "hilo/constant",
+      "candidate": "hilo/positive-step",
+      "profit_per_round": {
+        "difference": 0.002192396455670454,
+        "se": 0.0001261952964309736,
+        "ci95": [
+          0.001945053674665746,
+          0.0024397392366751623
+        ],
+        "family_ci95": [
+          0.0017203921195920267,
+          0.0026644007917488817
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0028674229589949244,
+        "se": 8.468985593414885e-05,
+        "ci95": [
+          0.0027014308413639927,
+          0.003033415076625856
+        ],
+        "family_ci95": [
+          0.0025506601290534725,
+          0.0031841857889363763
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "halves/constant",
+      "candidate": "halves/ramp",
+      "profit_per_round": {
+        "difference": 0.0013401529559163086,
+        "se": 6.199631737574712e-05,
+        "ci95": [
+          0.0012186401738598443,
+          0.001461665737972773
+        ],
+        "family_ci95": [
+          0.0011082700613089566,
+          0.0015720358505236607
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.001766811763520113,
+        "se": 5.154207672456509e-05,
+        "ci95": [
+          0.0016657892931399654,
+          0.0018678342339002608
+        ],
+        "family_ci95": [
+          0.0015740305395559638,
+          0.0019595929874842623
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "halves/constant",
+      "candidate": "halves/positive-step",
+      "profit_per_round": {
+        "difference": 0.002372117355890464,
+        "se": 0.00012926949005963838,
+        "ci95": [
+          0.002118749155373573,
+          0.0026254855564073554
+        ],
+        "family_ci95": [
+          0.0018886147091482304,
+          0.002855620002632698
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0030100638595168382,
+        "se": 8.533625510497034e-05,
+        "ci95": [
+          0.002842804799511096,
+          0.0031773229195225803
+        ],
+        "family_ci95": [
+          0.002690883322893013,
+          0.0033292443961406635
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "hiopt2-ace/constant",
+      "candidate": "hiopt2-ace/ramp",
+      "profit_per_round": {
+        "difference": 0.0013076559997003616,
+        "se": 6.0474296918015996e-05,
+        "ci95": [
+          0.0011891263777410502,
+          0.001426185621659673
+        ],
+        "family_ci95": [
+          0.0010814658707979667,
+          0.0015338461286027564
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0017128567047158907,
+        "se": 5.0592648010055106e-05,
+        "ci95": [
+          0.0016136951146161827,
+          0.0018120182948155987
+        ],
+        "family_ci95": [
+          0.001523626599396573,
+          0.0019020868100352083
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "hiopt2-ace/constant",
+      "candidate": "hiopt2-ace/positive-step",
+      "profit_per_round": {
+        "difference": 0.0023986522660682987,
+        "se": 0.00012784367916501843,
+        "ci95": [
+          0.0021480786549048624,
+          0.002649225877231735
+        ],
+        "family_ci95": [
+          0.0019204825353991819,
+          0.0028768219967374156
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0029932811759153773,
+        "se": 8.508525857118473e-05,
+        "ci95": [
+          0.0028265140691158554,
+          0.003160048282714899
+        ],
+        "family_ci95": [
+          0.0026750394338079728,
+          0.003311522918022782
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "omega2-ace/constant",
+      "candidate": "omega2-ace/ramp",
+      "profit_per_round": {
+        "difference": 0.001304453286818811,
+        "se": 6.152175418194608e-05,
+        "ci95": [
+          0.0011838706486221966,
+          0.0014250359250154254
+        ],
+        "family_ci95": [
+          0.0010743453861419168,
+          0.0015345611874957052
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.001721996979090323,
+        "se": 5.125499705824062e-05,
+        "ci95": [
+          0.0016215371848561715,
+          0.0018224567733244746
+        ],
+        "family_ci95": [
+          0.0015302895102591888,
+          0.0019137044479214573
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "omega2-ace/constant",
+      "candidate": "omega2-ace/positive-step",
+      "profit_per_round": {
+        "difference": 0.0021857391262577125,
+        "se": 0.00012893510675368152,
+        "ci95": [
+          0.0019330263170204967,
+          0.0024384519354949284
+        ],
+        "family_ci95": [
+          0.0017034871629782351,
+          0.00266799108953719
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0028543916005147477,
+        "se": 8.530389616855228e-05,
+        "ci95": [
+          0.0026871959640243854,
+          0.00302158723700511
+        ],
+        "family_ci95": [
+          0.00253533209501278,
+          0.0031734511060167152
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "ko-centered/constant",
+      "candidate": "ko-centered/ramp",
+      "profit_per_round": {
+        "difference": 0.0012290945740059188,
+        "se": 5.95195945681835e-05,
+        "ci95": [
+          0.001112436168652279,
+          0.0013457529793595585
+        ],
+        "family_ci95": [
+          0.001006475288562271,
+          0.0014517138594495665
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0016507772761211767,
+        "se": 4.996619074139585e-05,
+        "ci95": [
+          0.0015528435422680407,
+          0.0017487110099743126
+        ],
+        "family_ci95": [
+          0.0014638902894087934,
+          0.00183766426283356
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "ko-centered/constant",
+      "candidate": "ko-centered/positive-step",
+      "profit_per_round": {
+        "difference": 0.0021973291655226104,
+        "se": 0.00012696992459429308,
+        "ci95": [
+          0.001948468113317796,
+          0.0024461902177274246
+        ],
+        "family_ci95": [
+          0.0017224275118556843,
+          0.0026722308191895368
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0028765929032115107,
+        "se": 8.485711402176873e-05,
+        "ci95": [
+          0.002710272959728844,
+          0.0030429128466941775
+        ],
+        "family_ci95": [
+          0.0025592044830552605,
+          0.0031939813233677608
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "composition/constant",
+      "candidate": "composition/ramp",
+      "profit_per_round": {
+        "difference": 0.0013949792458463925,
+        "se": 6.241439188128418e-05,
+        "ci95": [
+          0.0012726470377590754,
+          0.0015173114539337096
+        ],
+        "family_ci95": [
+          0.0011615326401895935,
+          0.0016284258515031915
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0017918109542119022,
+        "se": 5.1816841828494636e-05,
+        "ci95": [
+          0.0016902499442280527,
+          0.0018933719641957517
+        ],
+        "family_ci95": [
+          0.0015980020348888477,
+          0.0019856198735349567
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "104",
+      "reference": "composition/constant",
+      "candidate": "composition/positive-step",
+      "profit_per_round": {
+        "difference": 0.002441353566830791,
+        "se": 0.00012954488059799398,
+        "ci95": [
+          0.0021874456008587227,
+          0.002695261532802859
+        ],
+        "family_ci95": [
+          0.0019568208854367514,
+          0.0029258862482248304
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.003004502617663266,
+        "se": 8.539287510150638e-05,
+        "ci95": [
+          0.0028371325824643138,
+          0.0031718726528622183
+        ],
+        "family_ci95": [
+          0.0026851103070301904,
+          0.0033238949282963417
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "baseline/constant",
+      "candidate": "baseline/ramp",
+      "profit_per_round": {
+        "difference": 0.0021009371526982627,
+        "se": 6.281076874393165e-05,
+        "ci95": [
+          0.0019778280459601567,
+          0.0022240462594363686
+        ],
+        "family_ci95": [
+          0.0018660079910098044,
+          0.002335866314386721
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0025908893103393595,
+        "se": 4.852079980108975e-05,
+        "ci95": [
+          0.0024957885427292236,
+          0.0026859900779494955
+        ],
+        "family_ci95": [
+          0.002409408474335027,
+          0.002772370146343692
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "baseline/constant",
+      "candidate": "baseline/positive-step",
+      "profit_per_round": {
+        "difference": 0.0033179534311641033,
+        "se": 0.00011843524689139124,
+        "ci95": [
+          0.0030858203472569766,
+          0.00355008651507123
+        ],
+        "family_ci95": [
+          0.002874973766642034,
+          0.0037609330956861727
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0038256236851300406,
+        "se": 7.051512083298699e-05,
+        "ci95": [
+          0.003687414048297386,
+          0.003963833321962695
+        ],
+        "family_ci95": [
+          0.0035618781753243758,
+          0.004089369194935705
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "baseline/constant",
+      "candidate": "hilo/constant",
+      "profit_per_round": {
+        "difference": 0.00026388129360328024,
+        "se": 4.376637153743448e-05,
+        "ci95": [
+          0.00017809920538990867,
+          0.0003496633818166518
+        ],
+        "family_ci95": [
+          0.00010018329752631841,
+          0.00042757928968024207
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.00026388129360328024,
+        "se": 4.376637153743448e-05,
+        "ci95": [
+          0.00017809920538990867,
+          0.0003496633818166518
+        ],
+        "family_ci95": [
+          0.00010018329752631841,
+          0.00042757928968024207
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "baseline/constant",
+      "candidate": "hilo/ramp",
+      "profit_per_round": {
+        "difference": 0.0029090149197597203,
+        "se": 8.995281427886655e-05,
+        "ci95": [
+          0.0027327074037731417,
+          0.003085322435746299
+        ],
+        "family_ci95": [
+          0.0025725672106701324,
+          0.0032454626288493083
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0032918725466911346,
+        "se": 7.238063862251927e-05,
+        "ci95": [
+          0.003150006494990997,
+          0.0034337385983912723
+        ],
+        "family_ci95": [
+          0.0030211494988108055,
+          0.0035625955945714637
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "baseline/constant",
+      "candidate": "hilo/positive-step",
+      "profit_per_round": {
+        "difference": 0.004063979254308005,
+        "se": 0.00013663686736389212,
+        "ci95": [
+          0.0037961709942747764,
+          0.004331787514341234
+        ],
+        "family_ci95": [
+          0.0035529206357389157,
+          0.004575037872877094
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.004315136884203827,
+        "se": 8.800106610018739e-05,
+        "ci95": [
+          0.00414265479464746,
+          0.0044876189737601945
+        ],
+        "family_ci95": [
+          0.003985989238027231,
+          0.004644284530380423
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "baseline/constant",
+      "candidate": "halves/constant",
+      "profit_per_round": {
+        "difference": 0.00034428938345636324,
+        "se": 4.512467020912163e-05,
+        "ci95": [
+          0.00025584502984648486,
+          0.0004327337370662416
+        ],
+        "family_ci95": [
+          0.00017551098517061875,
+          0.0005130677817421078
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.00034428938345636324,
+        "se": 4.512467020912163e-05,
+        "ci95": [
+          0.00025584502984648486,
+          0.0004327337370662416
+        ],
+        "family_ci95": [
+          0.00017551098517061875,
+          0.0005130677817421078
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "baseline/constant",
+      "candidate": "halves/ramp",
+      "profit_per_round": {
+        "difference": 0.0031725394021419875,
+        "se": 9.230775543307219e-05,
+        "ci95": [
+          0.0029916162014931662,
+          0.003353462602790809
+        ],
+        "family_ci95": [
+          0.002827283580013079,
+          0.003517795224270896
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0035066536768460213,
+        "se": 7.41473161103477e-05,
+        "ci95": [
+          0.00336132493726974,
+          0.0036519824164223027
+        ],
+        "family_ci95": [
+          0.003229322780192475,
+          0.0037839845734995675
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "baseline/constant",
+      "candidate": "halves/positive-step",
+      "profit_per_round": {
+        "difference": 0.0044533425431792185,
+        "se": 0.00013960973743244913,
+        "ci95": [
+          0.004179707457811618,
+          0.004726977628546819
+        ],
+        "family_ci95": [
+          0.003931164591301822,
+          0.004975520495056615
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0045717758719562695,
+        "se": 8.897405891294415e-05,
+        "ci95": [
+          0.004397386716486899,
+          0.00474616502742564
+        ],
+        "family_ci95": [
+          0.004238988971072224,
+          0.004904562772840315
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "baseline/constant",
+      "candidate": "hiopt2-ace/constant",
+      "profit_per_round": {
+        "difference": 0.0004261382008975108,
+        "se": 4.6456743868892424e-05,
+        "ci95": [
+          0.0003350829829144817,
+          0.00051719341888054
+        ],
+        "family_ci95": [
+          0.0002523774889981081,
+          0.0005998989127969135
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0004261382008975108,
+        "se": 4.6456743868892424e-05,
+        "ci95": [
+          0.0003350829829144817,
+          0.00051719341888054
+        ],
+        "family_ci95": [
+          0.0002523774889981081,
+          0.0005998989127969135
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "baseline/constant",
+      "candidate": "hiopt2-ace/ramp",
+      "profit_per_round": {
+        "difference": 0.003240920555815804,
+        "se": 9.18533758076354e-05,
+        "ci95": [
+          0.0030608879392328386,
+          0.0034209531723987693
+        ],
+        "family_ci95": [
+          0.0028973642356453473,
+          0.0035844768759862606
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.003553746870792316,
+        "se": 7.433749677484452e-05,
+        "ci95": [
+          0.0034080453771136205,
+          0.0036994483644710112
+        ],
+        "family_ci95": [
+          0.0032757046473237497,
+          0.003831789094260882
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "baseline/constant",
+      "candidate": "hiopt2-ace/positive-step",
+      "profit_per_round": {
+        "difference": 0.0045234967993882,
+        "se": 0.00013914159919986945,
+        "ci95": [
+          0.004250779264956456,
+          0.004796214333819944
+        ],
+        "family_ci95": [
+          0.0040030698103589515,
+          0.005043923788417448
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.004616081921432358,
+        "se": 8.935849104467612e-05,
+        "ci95": [
+          0.004440939278984792,
+          0.004791224563879923
+        ],
+        "family_ci95": [
+          0.0042818571410216015,
+          0.004950306701843114
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "baseline/constant",
+      "candidate": "omega2-ace/constant",
+      "profit_per_round": {
+        "difference": 0.00041404788624141865,
+        "se": 4.661136960227555e-05,
+        "ci95": [
+          0.00032268960182095855,
+          0.0005054061706618787
+        ],
+        "family_ci95": [
+          0.00023970883252825376,
+          0.0005883869399545836
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.00041404788624141865,
+        "se": 4.661136960227555e-05,
+        "ci95": [
+          0.00032268960182095855,
+          0.0005054061706618787
+        ],
+        "family_ci95": [
+          0.00023970883252825376,
+          0.0005883869399545836
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "baseline/constant",
+      "candidate": "omega2-ace/ramp",
+      "profit_per_round": {
+        "difference": 0.003203601083756327,
+        "se": 9.276663848729075e-05,
+        "ci95": [
+          0.003021778472321237,
+          0.003385423695191417
+        ],
+        "family_ci95": [
+          0.0028566289156345824,
+          0.0035505732518780714
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0035288258308109792,
+        "se": 7.479456749898811e-05,
+        "ci95": [
+          0.0033822284785129625,
+          0.003675423183108996
+        ],
+        "family_ci95": [
+          0.0032490740399512994,
+          0.003808577621670659
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "baseline/constant",
+      "candidate": "omega2-ace/positive-step",
+      "profit_per_round": {
+        "difference": 0.00435665748029003,
+        "se": 0.00013995331053125377,
+        "ci95": [
+          0.004082348991648772,
+          0.0046309659689312875
+        ],
+        "family_ci95": [
+          0.003833194472653963,
+          0.004880120487926097
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0045090449296160745,
+        "se": 8.948859848523376e-05,
+        "ci95": [
+          0.0043336472765850165,
+          0.004684442582647132
+        ],
+        "family_ci95": [
+          0.0041743335123984315,
+          0.004843756346833717
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "baseline/constant",
+      "candidate": "ko-centered/constant",
+      "profit_per_round": {
+        "difference": 0.00031679992862710966,
+        "se": 4.469733171988773e-05,
+        "ci95": [
+          0.00022919315845612971,
+          0.0004044066987980896
+        ],
+        "family_ci95": [
+          0.00014961989118044707,
+          0.00048397996607377224
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.00031679992862710966,
+        "se": 4.469733171988773e-05,
+        "ci95": [
+          0.00022919315845612971,
+          0.0004044066987980896
+        ],
+        "family_ci95": [
+          0.00014961989118044707,
+          0.00048397996607377224
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "baseline/constant",
+      "candidate": "ko-centered/ramp",
+      "profit_per_round": {
+        "difference": 0.002995614294242931,
+        "se": 9.017489321065805e-05,
+        "ci95": [
+          0.002818871503550041,
+          0.0031723570849358207
+        ],
+        "family_ci95": [
+          0.002658335950242837,
+          0.003332892638243025
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.003353739986317129,
+        "se": 7.30640271130367e-05,
+        "ci95": [
+          0.0032105344931755773,
+          0.003496945479458681
+        ],
+        "family_ci95": [
+          0.003080460881754238,
+          0.0036270190908800205
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "baseline/constant",
+      "candidate": "ko-centered/positive-step",
+      "profit_per_round": {
+        "difference": 0.004193521875533926,
+        "se": 0.00013802252067113881,
+        "ci95": [
+          0.003922997735018494,
+          0.004464046016049358
+        ],
+        "family_ci95": [
+          0.0036772805410648065,
+          0.004709763210003046
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.004401328733000794,
+        "se": 8.862937750930228e-05,
+        "ci95": [
+          0.004227615153082562,
+          0.004575042312919026
+        ],
+        "family_ci95": [
+          0.004069831033233476,
+          0.004732826432768112
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "baseline/constant",
+      "candidate": "composition/constant",
+      "profit_per_round": {
+        "difference": 0.000660289823530196,
+        "se": 4.971729053147522e-05,
+        "ci95": [
+          0.0005628439340885045,
+          0.0007577357129718874
+        ],
+        "family_ci95": [
+          0.0004743337905193846,
+          0.0008462458565410073
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.000660289823530196,
+        "se": 4.971729053147522e-05,
+        "ci95": [
+          0.0005628439340885045,
+          0.0007577357129718874
+        ],
+        "family_ci95": [
+          0.0004743337905193846,
+          0.0008462458565410073
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "baseline/constant",
+      "candidate": "composition/ramp",
+      "profit_per_round": {
+        "difference": 0.0036329568794500307,
+        "se": 9.527918471171318e-05,
+        "ci95": [
+          0.003446209677415073,
+          0.0038197040814849886
+        ],
+        "family_ci95": [
+          0.003276587112954455,
+          0.0039893266459456065
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0038729916892399525,
+        "se": 7.68717181302208e-05,
+        "ci95": [
+          0.0037223231217047197,
+          0.004023660256775185
+        ],
+        "family_ci95": [
+          0.003585470796580459,
+          0.004160512581899446
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "baseline/constant",
+      "candidate": "composition/positive-step",
+      "profit_per_round": {
+        "difference": 0.0049578811759340684,
+        "se": 0.0001418075457107821,
+        "ci95": [
+          0.004679938386340936,
+          0.005235823965527201
+        ],
+        "family_ci95": [
+          0.004427482830218066,
+          0.005488279521650071
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.004897036824018477,
+        "se": 9.088633594876471e-05,
+        "ci95": [
+          0.0047188996055588985,
+          0.005075174042478056
+        ],
+        "family_ci95": [
+          0.004557097492907492,
+          0.005236976155129462
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "hilo/constant",
+      "candidate": "halves/constant",
+      "profit_per_round": {
+        "difference": 8.0408089853083e-05,
+        "se": 2.5053723154060948e-05,
+        "ci95": [
+          3.1302792471123546e-05,
+          0.00012951338723504247
+        ],
+        "family_ci95": [
+          -1.3299570401065759e-05,
+          0.00017411575010723178
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 8.0408089853083e-05,
+        "se": 2.5053723154060948e-05,
+        "ci95": [
+          3.1302792471123546e-05,
+          0.00012951338723504247
+        ],
+        "family_ci95": [
+          -1.3299570401065759e-05,
+          0.00017411575010723178
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "hilo/ramp",
+      "candidate": "halves/ramp",
+      "profit_per_round": {
+        "difference": 0.0002635244823822676,
+        "se": 5.1125484886332565e-05,
+        "ci95": [
+          0.00016331853200505576,
+          0.00036373043275947944
+        ],
+        "family_ci95": [
+          7.23014238932333e-05,
+          0.0004547475408713019
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.00021478113015488713,
+        "se": 4.061641954216137e-05,
+        "ci95": [
+          0.00013517294785225084,
+          0.00029438931245752344
+        ],
+        "family_ci95": [
+          6.286480140037617e-05,
+          0.0003666974589093981
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "hilo/positive-step",
+      "candidate": "halves/positive-step",
+      "profit_per_round": {
+        "difference": 0.00038936328887121345,
+        "se": 8.617569000865435e-05,
+        "ci95": [
+          0.00022045893645425093,
+          0.000558267641288176
+        ],
+        "family_ci95": [
+          6.704304002672594e-05,
+          0.000711683537715701
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0002566389877524418,
+        "se": 5.588523311879099e-05,
+        "ci95": [
+          0.00014710393083961146,
+          0.00036617404466527217
+        ],
+        "family_ci95": [
+          4.761319122244679e-05,
+          0.0004656647842824368
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "hilo/constant",
+      "candidate": "hiopt2-ace/constant",
+      "profit_per_round": {
+        "difference": 0.00016225690729423058,
+        "se": 3.3877459911673226e-05,
+        "ci95": [
+          9.585708586735106e-05,
+          0.00022865672872111008
+        ],
+        "family_ci95": [
+          3.554609931749066e-05,
+          0.0002889677152709705
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.00016225690729423058,
+        "se": 3.3877459911673226e-05,
+        "ci95": [
+          9.585708586735106e-05,
+          0.00022865672872111008
+        ],
+        "family_ci95": [
+          3.554609931749066e-05,
+          0.0002889677152709705
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "hilo/ramp",
+      "candidate": "hiopt2-ace/ramp",
+      "profit_per_round": {
+        "difference": 0.00033190563605608385,
+        "se": 5.9368937240700175e-05,
+        "ci95": [
+          0.0002155425190643115,
+          0.0004482687530478562
+        ],
+        "family_ci95": [
+          0.00010984984952123284,
+          0.0005539614225909349
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0002618743241011815,
+        "se": 4.731134940096554e-05,
+        "ci95": [
+          0.00016914407927528903,
+          0.00035460456892707397
+        ],
+        "family_ci95": [
+          8.491715775233927e-05,
+          0.0004388314904500237
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "hilo/positive-step",
+      "candidate": "hiopt2-ace/positive-step",
+      "profit_per_round": {
+        "difference": 0.00045951754508019495,
+        "se": 9.527751475550695e-05,
+        "ci95": [
+          0.0002727736161594013,
+          0.0006462614740009886
+        ],
+        "family_ci95": [
+          0.00010315402466979572,
+          0.0008158810654905941
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0003009450372285301,
+        "se": 6.197617077805297e-05,
+        "ci95": [
+          0.00017947174250354628,
+          0.0004224183319535139
+        ],
+        "family_ci95": [
+          6.91374963129384e-05,
+          0.0005327525781441218
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "hilo/constant",
+      "candidate": "omega2-ace/constant",
+      "profit_per_round": {
+        "difference": 0.0001501665926381384,
+        "se": 3.435246998944832e-05,
+        "ci95": [
+          8.28357514588197e-05,
+          0.0002174974338174571
+        ],
+        "family_ci95": [
+          2.1679119264733486e-05,
+          0.0002786540660115433
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0001501665926381384,
+        "se": 3.435246998944832e-05,
+        "ci95": [
+          8.28357514588197e-05,
+          0.0002174974338174571
+        ],
+        "family_ci95": [
+          2.1679119264733486e-05,
+          0.0002786540660115433
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "hilo/ramp",
+      "candidate": "omega2-ace/ramp",
+      "profit_per_round": {
+        "difference": 0.00029458616399660655,
+        "se": 6.0859699373645776e-05,
+        "ci95": [
+          0.00017530115322426083,
+          0.00041387117476895225
+        ],
+        "family_ci95": [
+          6.695452629525245e-05,
+          0.0005222178016979607
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.00023695328411984487,
+        "se": 4.840290382968578e-05,
+        "ci95": [
+          0.00014208359261366074,
+          0.00033182297562602903
+        ],
+        "family_ci95": [
+          5.591341074472788e-05,
+          0.00041799315749496186
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "hilo/positive-step",
+      "candidate": "omega2-ace/positive-step",
+      "profit_per_round": {
+        "difference": 0.0002926782259820248,
+        "se": 9.672898736140376e-05,
+        "ci95": [
+          0.00010308941075367343,
+          0.0004822670412103762
+        ],
+        "family_ci95": [
+          -6.911419220078144e-05,
+          0.0006544706441648311
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0001939080454122471,
+        "se": 6.277891771948901e-05,
+        "ci95": [
+          7.086136668204866e-05,
+          0.0003169547241424456
+        ],
+        "family_ci95": [
+          -4.0901984881692836e-05,
+          0.00042871807570618706
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "hilo/constant",
+      "candidate": "ko-centered/constant",
+      "profit_per_round": {
+        "difference": 5.2918635023829416e-05,
+        "se": 2.4275196748164192e-05,
+        "ci95": [
+          5.3392493974276e-06,
+          0.00010049802065023123
+        ],
+        "family_ci95": [
+          -3.787712716654467e-05,
+          0.0001437143972142035
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 5.2918635023829416e-05,
+        "se": 2.4275196748164192e-05,
+        "ci95": [
+          5.3392493974276e-06,
+          0.00010049802065023123
+        ],
+        "family_ci95": [
+          -3.787712716654467e-05,
+          0.0001437143972142035
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "hilo/ramp",
+      "candidate": "ko-centered/ramp",
+      "profit_per_round": {
+        "difference": 8.659937448321107e-05,
+        "se": 4.792895905377704e-05,
+        "ci95": [
+          -7.341385262191923e-06,
+          0.00018054013422861407
+        ],
+        "family_ci95": [
+          -9.266781801062598e-05,
+          0.0002658665669770481
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 6.186743962599485e-05,
+        "se": 3.824886347585423e-05,
+        "ci95": [
+          -1.3100332786679446e-05,
+          0.00013683521203866915
+        ],
+        "family_ci95": [
+          -8.119359292643456e-05,
+          0.00020492847217842426
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "hilo/positive-step",
+      "candidate": "ko-centered/positive-step",
+      "profit_per_round": {
+        "difference": 0.00012954262122592147,
+        "se": 8.316874765973388e-05,
+        "ci95": [
+          -3.3468124187156935e-05,
+          0.00029255336663899984
+        ],
+        "family_ci95": [
+          -0.00018153085482141478,
+          0.0004406160972732577
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 8.619184879696669e-05,
+        "se": 5.4155489706506864e-05,
+        "ci95": [
+          -1.9952911027786767e-05,
+          0.00019233660862172014
+        ],
+        "family_ci95": [
+          -0.00011636424233202089,
+          0.00028874793992595424
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "hilo/constant",
+      "candidate": "composition/constant",
+      "profit_per_round": {
+        "difference": 0.0003964085299269157,
+        "se": 4.396612099083165e-05,
+        "ci95": [
+          0.0003102349327848857,
+          0.00048258212706894576
+        ],
+        "family_ci95": [
+          0.00023196341719189105,
+          0.0005608536426619404
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0003964085299269157,
+        "se": 4.396612099083165e-05,
+        "ci95": [
+          0.0003102349327848857,
+          0.00048258212706894576
+        ],
+        "family_ci95": [
+          0.00023196341719189105,
+          0.0005608536426619404
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "hilo/ramp",
+      "candidate": "composition/ramp",
+      "profit_per_round": {
+        "difference": 0.0007239419596903104,
+        "se": 7.532175826538363e-05,
+        "ci95": [
+          0.0005763113134901585,
+          0.0008715726058904623
+        ],
+        "family_ci95": [
+          0.000442218333629821,
+          0.0010056655857507996
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0005811191425488184,
+        "se": 5.980075128232035e-05,
+        "ci95": [
+          0.00046390967003547055,
+          0.0006983286150621663
+        ],
+        "family_ci95": [
+          0.00035744825540571487,
+          0.000804790029691922
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "hilo/positive-step",
+      "candidate": "composition/positive-step",
+      "profit_per_round": {
+        "difference": 0.0008939019216260634,
+        "se": 0.00011217452214776692,
+        "ci95": [
+          0.0006740398582164403,
+          0.0011137639850356865
+        ],
+        "family_ci95": [
+          0.00047433905083212296,
+          0.001313464792420004
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0005818999398146501,
+        "se": 7.270258236406686e-05,
+        "ci95": [
+          0.0004394028783810791,
+          0.0007243970012482211
+        ],
+        "family_ci95": [
+          0.00030997273578681434,
+          0.0008538271438424859
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "hilo/constant",
+      "candidate": "hilo/ramp",
+      "profit_per_round": {
+        "difference": 0.00264513362615644,
+        "se": 7.076291936078678e-05,
+        "ci95": [
+          0.002506438304209298,
+          0.002783828948103582
+        ],
+        "family_ci95": [
+          0.002380461283236521,
+          0.002909805969076359
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0030279912530878543,
+        "se": 5.282692717155762e-05,
+        "ci95": [
+          0.0029244504758316014,
+          0.0031315320303441072
+        ],
+        "family_ci95": [
+          0.0028304043430217316,
+          0.003225578163153977
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "hilo/constant",
+      "candidate": "hilo/positive-step",
+      "profit_per_round": {
+        "difference": 0.0038000979607047247,
+        "se": 0.00012091812466285922,
+        "ci95": [
+          0.0035630984363655208,
+          0.0040370974850439285
+        ],
+        "family_ci95": [
+          0.003347831665799195,
+          0.004252364255610254
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.004051255590600547,
+        "se": 7.151264917032537e-05,
+        "ci95": [
+          0.0039110907982267094,
+          0.004191420382974384
+        ],
+        "family_ci95": [
+          0.003783779056629157,
+          0.004318732124571937
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "halves/constant",
+      "candidate": "halves/ramp",
+      "profit_per_round": {
+        "difference": 0.0028282500186856243,
+        "se": 7.211127901911376e-05,
+        "ci95": [
+          0.0026869119118081613,
+          0.0029695881255630873
+        ],
+        "family_ci95": [
+          0.0025585344481389794,
+          0.003097965589232269
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.003162364293389658,
+        "se": 5.35828794421546e-05,
+        "ci95": [
+          0.003057341849683035,
+          0.003267386737096281
+        ],
+        "family_ci95": [
+          0.002961949918594806,
+          0.00336277866818451
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "halves/constant",
+      "candidate": "halves/positive-step",
+      "profit_per_round": {
+        "difference": 0.004109053159722855,
+        "se": 0.0001231530534501843,
+        "ci95": [
+          0.003867673174960494,
+          0.004350433144485216
+        ],
+        "family_ci95": [
+          0.003648427630295293,
+          0.004569678689150417
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.004227486488499906,
+        "se": 7.168506399656929e-05,
+        "ci95": [
+          0.0040869837630666305,
+          0.004367989213933182
+        ],
+        "family_ci95": [
+          0.003959365076724882,
+          0.0044956079002749305
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "hiopt2-ace/constant",
+      "candidate": "hiopt2-ace/ramp",
+      "profit_per_round": {
+        "difference": 0.002814782354918293,
+        "se": 7.091659303305152e-05,
+        "ci95": [
+          0.0026757858325735123,
+          0.002953778877263074
+        ],
+        "family_ci95": [
+          0.002549535231149155,
+          0.0030800294786874315
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.003127608669894805,
+        "se": 5.308264269429801e-05,
+        "ci95": [
+          0.003023566690213981,
+          0.003231650649575629
+        ],
+        "family_ci95": [
+          0.002929065315024877,
+          0.003326152024764733
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "hiopt2-ace/constant",
+      "candidate": "hiopt2-ace/positive-step",
+      "profit_per_round": {
+        "difference": 0.004097358598490689,
+        "se": 0.00012226560856397591,
+        "ci95": [
+          0.003857718005705296,
+          0.004336999191276082
+        ],
+        "family_ci95": [
+          0.003640052351525846,
+          0.004554664845455532
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.004189943720534847,
+        "se": 7.170149739808738e-05,
+        "ci95": [
+          0.004049408785634596,
+          0.004330478655435098
+        ],
+        "family_ci95": [
+          0.003921760843420049,
+          0.004458126597649645
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "omega2-ace/constant",
+      "candidate": "omega2-ace/ramp",
+      "profit_per_round": {
+        "difference": 0.0027895531975149082,
+        "se": 7.174252757871152e-05,
+        "ci95": [
+          0.0026489378434606334,
+          0.002930168551569183
+        ],
+        "family_ci95": [
+          0.00252121685649367,
+          0.0030578895385361465
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0031147779445695606,
+        "se": 5.344390868021352e-05,
+        "ci95": [
+          0.003010027883556342,
+          0.003219528005582779
+        ],
+        "family_ci95": [
+          0.0029148833577864607,
+          0.0033146725313526605
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "omega2-ace/constant",
+      "candidate": "omega2-ace/positive-step",
+      "profit_per_round": {
+        "difference": 0.003942609594048611,
+        "se": 0.00012298358251723888,
+        "ci95": [
+          0.003701561772314823,
+          0.004183657415782399
+        ],
+        "family_ci95": [
+          0.003482617931472285,
+          0.004402601256624937
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.004094997043374656,
+        "se": 7.172173520556201e-05,
+        "ci95": [
+          0.003954422442371755,
+          0.004235571644377557
+        ],
+        "family_ci95": [
+          0.0038267384714189964,
+          0.004363255615330315
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "ko-centered/constant",
+      "candidate": "ko-centered/ramp",
+      "profit_per_round": {
+        "difference": 0.0026788143656158213,
+        "se": 7.017207584984716e-05,
+        "ci95": [
+          0.002541277096950121,
+          0.0028163516342815218
+        ],
+        "family_ci95": [
+          0.002416351936274257,
+          0.0029412767949573856
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0030369400576900196,
+        "se": 5.272262187794451e-05,
+        "ci95": [
+          0.002933603718809248,
+          0.003140276396570791
+        ],
+        "family_ci95": [
+          0.00283974327746434,
+          0.003234136837915699
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "ko-centered/constant",
+      "candidate": "ko-centered/positive-step",
+      "profit_per_round": {
+        "difference": 0.0038767219469068165,
+        "se": 0.00012178635164627566,
+        "ci95": [
+          0.0036380206976801164,
+          0.0041154231961335165
+        ],
+        "family_ci95": [
+          0.0034212082496617156,
+          0.004332235644151917
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0040845288043736844,
+        "se": 7.160285973789933e-05,
+        "ci95": [
+          0.003944187199287402,
+          0.004224870409459967
+        ],
+        "family_ci95": [
+          0.0038167148586265845,
+          0.004352342750120784
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "composition/constant",
+      "candidate": "composition/ramp",
+      "profit_per_round": {
+        "difference": 0.0029726670559198348,
+        "se": 7.247444805122993e-05,
+        "ci95": [
+          0.002830617137739424,
+          0.0031147169741002454
+        ],
+        "family_ci95": [
+          0.002701593135555596,
+          0.0032437409762840737
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0032127018657097566,
+        "se": 5.3762694429265594e-05,
+        "ci95": [
+          0.003107326984628396,
+          0.0033180767467911173
+        ],
+        "family_ci95": [
+          0.003011614934520105,
+          0.003413788796899408
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "156",
+      "reference": "composition/constant",
+      "candidate": "composition/positive-step",
+      "profit_per_round": {
+        "difference": 0.0042975913524038725,
+        "se": 0.00012349994601299386,
+        "ci95": [
+          0.004055531458218404,
+          0.0045396512465893405
+        ],
+        "family_ci95": [
+          0.003835668351529829,
+          0.004759514353277916
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.004236747000488281,
+        "se": 7.176676019949374e-05,
+        "ci95": [
+          0.004096084150497273,
+          0.004377409850479289
+        ],
+        "family_ci95": [
+          0.0039683200229504115,
+          0.004505173978026151
+        ]
+      }
+    }
+  ],
+  "scenario_runtime_seconds": {
+    "104": 77.724040173,
+    "156": 110.744600832
+  },
+  "build_seconds": 2.9001883000000817,
+  "total_runtime_seconds": 191.3861214980002
+}

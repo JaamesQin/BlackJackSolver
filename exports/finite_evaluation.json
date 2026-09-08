@@ -1,0 +1,663 @@
+{
+  "model": "Experimental six-deck shallow-shoe approximation; not calibrated Macau CSM behavior",
+  "configuration": {
+    "shoes_per_mode": 250000,
+    "seed": 20260907,
+    "decks": 6,
+    "policies": [
+      "every-round",
+      "26",
+      "52"
+    ],
+    "betting": {
+      "minimum": 1.0,
+      "maximum": 4.0,
+      "full_bet_edge": 0.01,
+      "bounded": true
+    },
+    "count_grid_step": 0.25,
+    "count_grid_limit": 12,
+    "parameter_tuning": "none; analytic tables and fixed defaults"
+  },
+  "environment": {
+    "python": "3.12.3",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39"
+  },
+  "table_build_seconds": 0.876409276000004,
+  "total_runtime_seconds": 361.756560068,
+  "uncertainty": "Normal 95% intervals using independent whole-shoe clusters; paired mode comparisons; no multiplicity adjustment",
+  "results": [
+    {
+      "reshuffle_policy": "every-round",
+      "playing": "baseline",
+      "betting": "constant",
+      "runtime_seconds": 16.199313670000038,
+      "shoes": 250000,
+      "rounds": 250000,
+      "expected_profit_per_round": -0.007002,
+      "profit_per_round_se": 0.0022891161718434894,
+      "profit_per_round_ci95": [
+        -0.01148866769681324,
+        -0.0025153323031867616
+      ],
+      "profit_relative_to_initial_wagers": -0.007002,
+      "profit_relative_to_initial_wagers_se": 0.0022891161718434894,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.01148866769681324,
+        -0.0025153323031867616
+      ],
+      "round_profit_variance": 1.310007971996,
+      "long_run_variance_per_round": 1.3100132120488481,
+      "total_profit": -1750.5,
+      "total_initial_wagers": 250000.0,
+      "mean_initial_bet": 1.0,
+      "observed_bet_range": [
+        1.0,
+        1.0
+      ],
+      "fraction_raised_bets": 0.0,
+      "mean_predicted_unit_edge": -0.005703880122756867,
+      "mean_realized_unit_profit": -0.007002,
+      "prediction_bias_realized_minus_predicted": -0.0012981198772725538,
+      "prediction_bias_ci95": [
+        -0.005784787574085702,
+        0.003188547819540595
+      ],
+      "mean_cards_per_round": 5.46934,
+      "mean_cards_per_shoe": 5.46934,
+      "max_cards_per_shoe": 14,
+      "hidden_cards_mucked": 51170,
+      "pre_round_count_clips": 0
+    },
+    {
+      "reshuffle_policy": "every-round",
+      "playing": "baseline",
+      "betting": "bounded",
+      "runtime_seconds": 16.460528735000025,
+      "shoes": 250000,
+      "rounds": 250000,
+      "expected_profit_per_round": -0.007002,
+      "profit_per_round_se": 0.0022891161718434894,
+      "profit_per_round_ci95": [
+        -0.01148866769681324,
+        -0.0025153323031867616
+      ],
+      "profit_relative_to_initial_wagers": -0.007002,
+      "profit_relative_to_initial_wagers_se": 0.0022891161718434894,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.01148866769681324,
+        -0.0025153323031867616
+      ],
+      "round_profit_variance": 1.310007971996,
+      "long_run_variance_per_round": 1.3100132120488481,
+      "total_profit": -1750.5,
+      "total_initial_wagers": 250000.0,
+      "mean_initial_bet": 1.0,
+      "observed_bet_range": [
+        1.0,
+        1.0
+      ],
+      "fraction_raised_bets": 0.0,
+      "mean_predicted_unit_edge": -0.005703880122756867,
+      "mean_realized_unit_profit": -0.007002,
+      "prediction_bias_realized_minus_predicted": -0.0012981198772725538,
+      "prediction_bias_ci95": [
+        -0.005784787574085702,
+        0.003188547819540595
+      ],
+      "mean_cards_per_round": 5.46934,
+      "mean_cards_per_shoe": 5.46934,
+      "max_cards_per_shoe": 14,
+      "hidden_cards_mucked": 51170,
+      "pre_round_count_clips": 0
+    },
+    {
+      "reshuffle_policy": "every-round",
+      "playing": "counting",
+      "betting": "constant",
+      "runtime_seconds": 16.82284409099998,
+      "shoes": 250000,
+      "rounds": 250000,
+      "expected_profit_per_round": -0.007194,
+      "profit_per_round_se": 0.002292068498053232,
+      "profit_per_round_ci95": [
+        -0.011686454256184333,
+        -0.002701545743815666
+      ],
+      "profit_relative_to_initial_wagers": -0.007194,
+      "profit_relative_to_initial_wagers_se": 0.002292068498053232,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.011686454256184333,
+        -0.002701545743815666
+      ],
+      "round_profit_variance": 1.313389246364,
+      "long_run_variance_per_round": 1.3133944999419997,
+      "total_profit": -1798.5,
+      "total_initial_wagers": 250000.0,
+      "mean_initial_bet": 1.0,
+      "observed_bet_range": [
+        1.0,
+        1.0
+      ],
+      "fraction_raised_bets": 0.0,
+      "mean_predicted_unit_edge": -0.005703880122756867,
+      "mean_realized_unit_profit": -0.007194,
+      "prediction_bias_realized_minus_predicted": -0.0014901198772727486,
+      "prediction_bias_ci95": [
+        -0.005982574133456963,
+        0.0030023343789114657
+      ],
+      "mean_cards_per_round": 5.464184,
+      "mean_cards_per_shoe": 5.464184,
+      "max_cards_per_shoe": 14,
+      "hidden_cards_mucked": 50060,
+      "pre_round_count_clips": 0
+    },
+    {
+      "reshuffle_policy": "every-round",
+      "playing": "counting",
+      "betting": "bounded",
+      "runtime_seconds": 16.709861161999925,
+      "shoes": 250000,
+      "rounds": 250000,
+      "expected_profit_per_round": -0.007194,
+      "profit_per_round_se": 0.002292068498053232,
+      "profit_per_round_ci95": [
+        -0.011686454256184333,
+        -0.002701545743815666
+      ],
+      "profit_relative_to_initial_wagers": -0.007194,
+      "profit_relative_to_initial_wagers_se": 0.002292068498053232,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.011686454256184333,
+        -0.002701545743815666
+      ],
+      "round_profit_variance": 1.313389246364,
+      "long_run_variance_per_round": 1.3133944999419997,
+      "total_profit": -1798.5,
+      "total_initial_wagers": 250000.0,
+      "mean_initial_bet": 1.0,
+      "observed_bet_range": [
+        1.0,
+        1.0
+      ],
+      "fraction_raised_bets": 0.0,
+      "mean_predicted_unit_edge": -0.005703880122756867,
+      "mean_realized_unit_profit": -0.007194,
+      "prediction_bias_realized_minus_predicted": -0.0014901198772727486,
+      "prediction_bias_ci95": [
+        -0.005982574133456963,
+        0.0030023343789114657
+      ],
+      "mean_cards_per_round": 5.464184,
+      "mean_cards_per_shoe": 5.464184,
+      "max_cards_per_shoe": 14,
+      "hidden_cards_mucked": 50060,
+      "pre_round_count_clips": 0
+    },
+    {
+      "reshuffle_policy": "26",
+      "playing": "baseline",
+      "betting": "constant",
+      "runtime_seconds": 26.604320963999953,
+      "shoes": 250000,
+      "rounds": 1292109,
+      "expected_profit_per_round": -0.006463463995684575,
+      "profit_per_round_se": 0.0010070832724036595,
+      "profit_per_round_ci95": [
+        -0.008437347209595748,
+        -0.004489580781773402
+      ],
+      "profit_relative_to_initial_wagers": -0.006463463995684575,
+      "profit_relative_to_initial_wagers_se": 0.0010070832724036595,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.008437347209595748,
+        -0.004489580781773402
+      ],
+      "round_profit_variance": 1.3104012667510558,
+      "long_run_variance_per_round": 1.310478548703614,
+      "total_profit": -8351.5,
+      "total_initial_wagers": 1292109.0,
+      "mean_initial_bet": 1.0,
+      "observed_bet_range": [
+        1.0,
+        1.0
+      ],
+      "fraction_raised_bets": 0.0,
+      "mean_predicted_unit_edge": -0.005961316500936267,
+      "mean_realized_unit_profit": -0.006463463995684575,
+      "prediction_bias_realized_minus_predicted": -0.000502147494717482,
+      "prediction_bias_ci95": [
+        -0.002476550407553913,
+        0.0014722554181189492
+      ],
+      "mean_cards_per_round": 5.473808324220325,
+      "mean_cards_per_shoe": 28.291028,
+      "max_cards_per_shoe": 37,
+      "hidden_cards_mucked": 262776,
+      "pre_round_count_clips": 0
+    },
+    {
+      "reshuffle_policy": "26",
+      "playing": "baseline",
+      "betting": "bounded",
+      "runtime_seconds": 27.205709609999985,
+      "shoes": 250000,
+      "rounds": 1292109,
+      "expected_profit_per_round": -0.006499969827976501,
+      "profit_per_round_se": 0.0010155942412918692,
+      "profit_per_round_ci95": [
+        -0.008490534540908565,
+        -0.004509405115044438
+      ],
+      "profit_relative_to_initial_wagers": -0.006458329405288954,
+      "profit_relative_to_initial_wagers_se": 0.001009065336582893,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.008436097464991424,
+        -0.004480561345586484
+      ],
+      "round_profit_variance": 1.3324644247334592,
+      "long_run_variance_per_round": 1.3327221345764693,
+      "total_profit": -8398.66951445689,
+      "total_initial_wagers": 1300439.9415704815,
+      "mean_initial_bet": 1.0064475532408501,
+      "observed_bet_range": [
+        1.0,
+        3.2038339030224634
+      ],
+      "fraction_raised_bets": 0.016362396670869098,
+      "mean_predicted_unit_edge": -0.005961316500936267,
+      "mean_realized_unit_profit": -0.006463463995684575,
+      "prediction_bias_realized_minus_predicted": -0.000502147494717482,
+      "prediction_bias_ci95": [
+        -0.002476550407553913,
+        0.0014722554181189492
+      ],
+      "mean_cards_per_round": 5.473808324220325,
+      "mean_cards_per_shoe": 28.291028,
+      "max_cards_per_shoe": 37,
+      "hidden_cards_mucked": 262776,
+      "pre_round_count_clips": 0
+    },
+    {
+      "reshuffle_policy": "26",
+      "playing": "counting",
+      "betting": "constant",
+      "runtime_seconds": 30.826084662999847,
+      "shoes": 250000,
+      "rounds": 1293296,
+      "expected_profit_per_round": -0.006380596553302569,
+      "profit_per_round_se": 0.001008472773206194,
+      "profit_per_round_ci95": [
+        -0.008357203188786709,
+        -0.004403989917818429
+      ],
+      "profit_relative_to_initial_wagers": -0.006380596553302569,
+      "profit_relative_to_initial_wagers_se": 0.001008472773206194,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.008357203188786709,
+        -0.004403989917818429
+      ],
+      "round_profit_variance": 1.3158235603583728,
+      "long_run_variance_per_round": 1.3153044503785145,
+      "total_profit": -8252.0,
+      "total_initial_wagers": 1293296.0,
+      "mean_initial_bet": 1.0,
+      "observed_bet_range": [
+        1.0,
+        1.0
+      ],
+      "fraction_raised_bets": 0.0,
+      "mean_predicted_unit_edge": -0.00590324289522733,
+      "mean_realized_unit_profit": -0.006380596553302569,
+      "prediction_bias_realized_minus_predicted": -0.00047735365798006797,
+      "prediction_bias_ci95": [
+        -0.002454501192592305,
+        0.0014997938766321691
+      ],
+      "mean_cards_per_round": 5.467119669433757,
+      "mean_cards_per_shoe": 28.282416,
+      "max_cards_per_shoe": 37,
+      "hidden_cards_mucked": 254769,
+      "pre_round_count_clips": 0
+    },
+    {
+      "reshuffle_policy": "26",
+      "playing": "counting",
+      "betting": "bounded",
+      "runtime_seconds": 33.020656030000055,
+      "shoes": 250000,
+      "rounds": 1293296,
+      "expected_profit_per_round": -0.006464464166637313,
+      "profit_per_round_se": 0.0010207258155088064,
+      "profit_per_round_ci95": [
+        -0.008465086765034574,
+        -0.004463841568240052
+      ],
+      "profit_relative_to_initial_wagers": -0.006409234536519322,
+      "profit_relative_to_initial_wagers_se": 0.0010119738899458418,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.008392703360813172,
+        -0.004425765712225471
+      ],
+      "round_profit_variance": 1.3474735305639691,
+      "long_run_variance_per_round": 1.347460776079203,
+      "total_profit": -8360.46564885537,
+      "total_initial_wagers": 1304440.5850992166,
+      "mean_initial_bet": 1.008617195985464,
+      "observed_bet_range": [
+        1.0,
+        3.5413480727545448
+      ],
+      "fraction_raised_bets": 0.016432433101161683,
+      "mean_predicted_unit_edge": -0.00590324289522733,
+      "mean_realized_unit_profit": -0.006380596553302569,
+      "prediction_bias_realized_minus_predicted": -0.00047735365798006797,
+      "prediction_bias_ci95": [
+        -0.002454501192592305,
+        0.0014997938766321691
+      ],
+      "mean_cards_per_round": 5.467119669433757,
+      "mean_cards_per_shoe": 28.282416,
+      "max_cards_per_shoe": 37,
+      "hidden_cards_mucked": 254769,
+      "pre_round_count_clips": 0
+    },
+    {
+      "reshuffle_policy": "52",
+      "playing": "baseline",
+      "betting": "constant",
+      "runtime_seconds": 41.01051926100013,
+      "shoes": 250000,
+      "rounds": 2482008,
+      "expected_profit_per_round": -0.005006228827626664,
+      "profit_per_round_se": 0.000726481506087628,
+      "profit_per_round_ci95": [
+        -0.006430132579558415,
+        -0.003582325075694913
+      ],
+      "profit_relative_to_initial_wagers": -0.005006228827626664,
+      "profit_relative_to_initial_wagers_se": 0.000726481506087628,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.006430132579558415,
+        -0.003582325075694913
+      ],
+      "round_profit_variance": 1.3107542542585287,
+      "long_run_variance_per_round": 1.309942712105028,
+      "total_profit": -12425.5,
+      "total_initial_wagers": 2482008.0,
+      "mean_initial_bet": 1.0,
+      "observed_bet_range": [
+        1.0,
+        1.0
+      ],
+      "fraction_raised_bets": 0.0,
+      "mean_predicted_unit_edge": -0.0060490905958594495,
+      "mean_realized_unit_profit": -0.005006228827626664,
+      "prediction_bias_realized_minus_predicted": 0.001042861768249346,
+      "prediction_bias_ci95": [
+        -0.00038183214006510635,
+        0.0024675556765637987
+      ],
+      "mean_cards_per_round": 5.4743961340978755,
+      "mean_cards_per_shoe": 54.34998,
+      "max_cards_per_shoe": 65,
+      "hidden_cards_mucked": 504228,
+      "pre_round_count_clips": 0
+    },
+    {
+      "reshuffle_policy": "52",
+      "playing": "baseline",
+      "betting": "bounded",
+      "runtime_seconds": 41.16756461399996,
+      "shoes": 250000,
+      "rounds": 2482008,
+      "expected_profit_per_round": -0.004823120048717299,
+      "profit_per_round_se": 0.0007650446879901753,
+      "profit_per_round_ci95": [
+        -0.006322607637178042,
+        -0.003323632460256555
+      ],
+      "profit_relative_to_initial_wagers": -0.004658128997702257,
+      "profit_relative_to_initial_wagers_se": 0.0007388197676701617,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.006106215742335774,
+        -0.0032100422530687398
+      ],
+      "round_profit_variance": 1.4517047847506623,
+      "long_run_variance_per_round": 1.4527028381587632,
+      "total_profit": -11971.022545876725,
+      "total_initial_wagers": 2569920.7883211784,
+      "mean_initial_bet": 1.035420026172832,
+      "observed_bet_range": [
+        1.0,
+        4.0
+      ],
+      "fraction_raised_bets": 0.06049577600072199,
+      "mean_predicted_unit_edge": -0.0060490905958594495,
+      "mean_realized_unit_profit": -0.005006228827626664,
+      "prediction_bias_realized_minus_predicted": 0.001042861768249346,
+      "prediction_bias_ci95": [
+        -0.00038183214006510635,
+        0.0024675556765637987
+      ],
+      "mean_cards_per_round": 5.4743961340978755,
+      "mean_cards_per_shoe": 54.34998,
+      "max_cards_per_shoe": 65,
+      "hidden_cards_mucked": 504228,
+      "pre_round_count_clips": 0
+    },
+    {
+      "reshuffle_policy": "52",
+      "playing": "counting",
+      "betting": "constant",
+      "runtime_seconds": 46.53550429100005,
+      "shoes": 250000,
+      "rounds": 2485101,
+      "expected_profit_per_round": -0.004903221237285728,
+      "profit_per_round_se": 0.0007285526949640087,
+      "profit_per_round_ci95": [
+        -0.006331184519415185,
+        -0.0034752579551562707
+      ],
+      "profit_relative_to_initial_wagers": -0.004903221237285728,
+      "profit_relative_to_initial_wagers_se": 0.0007285526949640087,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.006331184519415185,
+        -0.0034752579551562707
+      ],
+      "round_profit_variance": 1.3170481820454072,
+      "long_run_variance_per_round": 1.3190643476001733,
+      "total_profit": -12185.0,
+      "total_initial_wagers": 2485101.0,
+      "mean_initial_bet": 1.0,
+      "observed_bet_range": [
+        1.0,
+        1.0
+      ],
+      "fraction_raised_bets": 0.0,
+      "mean_predicted_unit_edge": -0.005933097562689125,
+      "mean_realized_unit_profit": -0.004903221237285728,
+      "prediction_bias_realized_minus_predicted": 0.0010298763254018646,
+      "prediction_bias_ci95": [
+        -0.0003989226701647461,
+        0.0024586753209684753
+      ],
+      "mean_cards_per_round": 5.467025686279954,
+      "mean_cards_per_shoe": 54.344444,
+      "max_cards_per_shoe": 65,
+      "hidden_cards_mucked": 487903,
+      "pre_round_count_clips": 0
+    },
+    {
+      "reshuffle_policy": "52",
+      "playing": "counting",
+      "betting": "bounded",
+      "runtime_seconds": 47.10494205800023,
+      "shoes": 250000,
+      "rounds": 2485101,
+      "expected_profit_per_round": -0.004634137359776025,
+      "profit_per_round_se": 0.0007800056019395772,
+      "profit_per_round_ci95": [
+        -0.006162948339577597,
+        -0.0031053263799744536
+      ],
+      "profit_relative_to_initial_wagers": -0.004435098830639194,
+      "profit_relative_to_initial_wagers_se": 0.0007464368156325471,
+      "profit_relative_to_initial_wagers_ci95": [
+        -0.005898114989278986,
+        -0.0029720826719994015
+      ],
+      "round_profit_variance": 1.5096569019789305,
+      "long_run_variance_per_round": 1.5119571658395938,
+      "total_profit": -11516.299386916759,
+      "total_initial_wagers": 2596627.4544680235,
+      "mean_initial_bet": 1.044878036936134,
+      "observed_bet_range": [
+        1.0,
+        4.0
+      ],
+      "fraction_raised_bets": 0.060947623456752864,
+      "mean_predicted_unit_edge": -0.005933097562689125,
+      "mean_realized_unit_profit": -0.004903221237285728,
+      "prediction_bias_realized_minus_predicted": 0.0010298763254018646,
+      "prediction_bias_ci95": [
+        -0.0003989226701647461,
+        0.0024586753209684753
+      ],
+      "mean_cards_per_round": 5.467025686279954,
+      "mean_cards_per_shoe": 54.344444,
+      "max_cards_per_shoe": 65,
+      "hidden_cards_mucked": 487903,
+      "pre_round_count_clips": 0
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "reshuffle_policy": "every-round",
+      "betting": "constant",
+      "direction": "counting minus baseline",
+      "profit_per_round": {
+        "difference": -0.00019199999999999946,
+        "se": 0.00023172411900419283,
+        "ci95": [
+          -0.0006461792732482174,
+          0.00026217927324821846
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": -0.00019199999999999946,
+        "se": 0.00023172411900419283,
+        "ci95": [
+          -0.0006461792732482174,
+          0.00026217927324821846
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "every-round",
+      "betting": "bounded",
+      "direction": "counting minus baseline",
+      "profit_per_round": {
+        "difference": -0.00019199999999999946,
+        "se": 0.00023172411900419283,
+        "ci95": [
+          -0.0006461792732482174,
+          0.00026217927324821846
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": -0.00019199999999999946,
+        "se": 0.00023172411900419283,
+        "ci95": [
+          -0.0006461792732482174,
+          0.00026217927324821846
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "26",
+      "betting": "constant",
+      "direction": "counting minus baseline",
+      "profit_per_round": {
+        "difference": 8.286744238200552e-05,
+        "se": 0.00022503855532631507,
+        "ci95": [
+          -0.000358208126057572,
+          0.000523943010821583
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 8.286744238200552e-05,
+        "se": 0.00022503855532631507,
+        "ci95": [
+          -0.000358208126057572,
+          0.000523943010821583
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "26",
+      "betting": "bounded",
+      "direction": "counting minus baseline",
+      "profit_per_round": {
+        "difference": 3.5505661339188185e-05,
+        "se": 0.0002338255488800807,
+        "ci95": [
+          -0.00042279241446576993,
+          0.0004938037371441463
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 4.909486876963215e-05,
+        "se": 0.00023203832600911226,
+        "ci95": [
+          -0.0004057002502082279,
+          0.0005038899877474922
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "52",
+      "betting": "constant",
+      "direction": "counting minus baseline",
+      "profit_per_round": {
+        "difference": 0.0001030075903409363,
+        "se": 0.00022092202366307814,
+        "ci95": [
+          -0.00032999957603869687,
+          0.0005360147567205695
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.0001030075903409363,
+        "se": 0.00022092202366307814,
+        "ci95": [
+          -0.00032999957603869687,
+          0.0005360147567205695
+        ]
+      }
+    },
+    {
+      "reshuffle_policy": "52",
+      "betting": "bounded",
+      "direction": "counting minus baseline",
+      "profit_per_round": {
+        "difference": 0.0001889826889412737,
+        "se": 0.00026176959960456703,
+        "ci95": [
+          -0.00032408572628367773,
+          0.0007020511041662251
+        ]
+      },
+      "profit_relative_to_initial_wagers": {
+        "difference": 0.00022303016706306297,
+        "se": 0.0002513697001233634,
+        "ci95": [
+          -0.0002696544451787293,
+          0.0007157147793048552
+        ]
+      }
+    }
+  ]
+}
